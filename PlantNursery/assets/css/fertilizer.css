@@ -1,0 +1,769 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Apply Poppins font to all elements */
+* {
+    font-family: 'poppins', sans-serif; 
+}
+
+/* Header container styling */
+.header_container {
+   display: flex; /* Use flexbox layout to display items in row */
+   justify-content: space-between; /* Align items properly */
+   align-items: center;
+   padding: 0px 20px; /* Add padding for right spacing */
+}
+
+/* Logo styling */
+.logo img {
+   width: 180px;
+   height: 180px;
+}
+.logo {
+   margin: 0; /* Remove extra margin */
+}
+
+/* Free shipping banner styling */
+.free_shipping {
+   color: #FFFFFF;
+   background-color: #2E7D32;
+   border-radius: 20px; /* Corner Styling for border */
+   text-align: center;
+   padding:5px 35px 15px 15px; /* Better spacing */
+   /* min-height: 50px; Allow flexible height */
+}
+
+.free_shipping h3 {
+   margin:5px;
+   margin-bottom: 0px;
+}
+
+/* Login button container*/
+.login {
+   display: flex; /* Use flexbox for layout */
+   align-items: center;
+   border: 1px solid #2E7D32;
+   padding: 0px 15px;
+   border-radius: 20px;
+}
+
+.login:hover {
+   border:none;
+   cursor: pointer;
+}
+
+/* Text inside login button */
+.login h3 {
+   padding-left: 5px;  /*To Add space between icon and text */
+   font-weight: bold;
+}
+
+/* Remove underline from login link */
+.login a {
+   text-decoration: none;
+   color: black;
+}
+
+/* Set size for login icon */
+.login img {
+   width: 40px;
+   height: 40px;
+}
+
+/* Search bar styling */
+.search {
+   display: flex;
+   align-items: center;
+   border: 1px solid #2E7D32;
+   border-radius: 20px; /* Corner styling */
+   padding: 0px 15px; /*Inner padding */
+   width: 250px; /* Set a proper width instead of large padding */
+}
+
+.bx-search {
+font-size: larger;
+}
+.search h3 {
+   color: grey;
+   padding-left: 5px;
+   font-weight: bold;
+}
+
+/* Navigation menu */
+.menu {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #2E7D32;
+   height: 110px;
+   padding: 0 20px;
+   position: relative;
+}
+
+/* Hide menu links by default on small screens */
+.menu-links {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   flex-grow: 1;
+}
+
+/* Navigation links */
+.menu-links a {
+   text-decoration: none;
+   color: #FFFFFF;
+   padding: 10px 20px;
+   font-size: 20px;
+   font-weight: bold;
+}
+
+/* Change style when hovered */
+.menu-links a:hover {
+  color: black;
+  background-color: rgb(192, 245, 192);
+  border-radius: 20px;
+}
+
+/* Toggle button (hamburger menu) */
+.menu-toggle {
+   display: none;
+   font-size: 24px;
+   cursor: pointer;
+   color: #FFFFFF;
+}
+
+ /* Modal container hidden by default */
+ .modal {
+   display:none; /* Initially hidden */
+   /* display:flex; */
+   justify-content: center;
+   align-items: center;
+   background-color: rgba(0,0,0,0.5); /* For semi-transparent background */
+   width:100%;  /*To take Full width and height*/
+   height:100%;
+   position:fixed; /* Fixed position on screen */
+   left:0;
+   top:0;
+   z-index: 1000; /* To Ensure modal appears on top */
+ }
+
+ /* Modal content box styling */
+ .modal_content {
+   background-color: white;
+   width:40%; /* Setting Modal width and height */
+   height:85%;
+   padding:20px; /* Padding inside */
+   border:5px solid #2E7D32;
+   border-radius: 30px; /* Rounded corners */
+   text-align: center;
+   margin:3% auto; /* Center horizontally */
+ }
+
+ /* Close button inside modal */
+ .close {
+   float:right; /* Positioning to the top Right */
+   font-size: 30px; 
+   cursor: pointer;
+   border:1px solid black;
+   padding:0 5px; /* Padding inside */
+ }
+
+ /* Input container styling */
+ .input_container {
+   position:relative; /* Relative for absolute positioning(img) */
+   width:100%;
+   margin:15px 0;  /* Spacing between inputs */
+ }
+
+ /* Input field icons */
+ .input_container img {
+   position:absolute; /* Position inside input */
+   left:20%; /* Adjusting left and top */
+   top:15%;
+   color:grey;
+ }
+
+ /* Input field styling */
+.input_container input {
+   padding: 10px 10px 10px 40px; /* Space for icon */
+   width:300px;
+   border-radius: 10px;
+   border: 2px solid #2E7D32;
+   margin-bottom: 15px;
+   font-size: larger;
+}
+
+/* Button styling */
+.btn {
+   color:#FFFFFF;
+   background-color: #2E7D32;
+   border:none;
+   padding:15px 35px;
+   border-radius: 10px;
+   font-weight: bolder;
+   font-size: 15px;
+}
+/* Form heading styling */
+form h3 {
+   border:1px solid #276b2a;
+   display: inline;
+   padding:10px 50px; /* Padding around text */
+   border-radius: 10px;
+   font-weight: bolder;
+}
+
+form p {
+   font-weight: bolder;
+}
+
+
+/* Pots Section background color*/
+/* .soilContainer{
+    background-color: rgb(117, 174, 145);
+ } */
+ 
+ /* Pots Section Title */
+ .soilContainer h2{
+    text-align: center;
+    text-decoration: underline;
+    padding-top: 20px;
+    font-size: 38px;
+    font-weight: bolder;
+ }
+ 
+ /* Layout for Different pot types */
+ .fertilizerTypes {
+    display:flex; /* To display in row */
+    justify-content: space-between; /* To space evenly(all elements) */
+    align-items: center;
+    text-align: center;
+    padding-bottom: 30px;
+ }
+ 
+ /* Pot Images */
+ .fertilizerItem img{
+    width:180px;
+    height:180px;
+    border-radius: 50%; /* Circle shape image*/
+    transition: transform 0.3s ease-in-out; /* Smooth animation effect*/
+    box-shadow: 0px 4px 2px rgba(107, 193, 149, 0.8); /* To create a Green shadow in bottom*/
+ }
+ 
+ /* Hover Effect for Pot Images */
+ .fertilizerItem:hover img {
+    transform: scale(1.2, 1.2) translate(10%, 10%); /* Enlarge and move down like effect */ 
+ }
+ 
+ /* Pot Item Title */
+ .fertilizerItem h1 {
+    font-weight:500;
+    font-size: 25px;
+    padding-top: 20px;
+ }
+ 
+ /* Padding for Individual Pot Items */
+ .fertilizerItem {
+ padding:30px 40px;
+ }
+ 
+ .product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    max-width: 90%;
+    margin: auto;
+}
+.product {
+    border: 2px solid #000; /* Added a clear border for each item */
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    height: 530px; /* Decreased height of each item */
+}
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 250px; /* Adjusted image wrapper height */
+}
+.product img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+.hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.image-wrapper:hover .hover-image {
+    opacity: 1;
+}
+.product-info {
+    max-height: 200px; /* Reduced height for uniformity */
+    flex-grow: 1;
+display:flex;
+    flex-direction: column;
+justify-content: space-between;
+}
+.product-info h3{
+    margin-top: 7px;
+    margin-bottom: 7px;
+
+}
+.offer {
+    font-size: 24px;
+    font-weight: bold;
+}
+.cart-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+.cart-icon {
+    font-size: 1.5em;
+}
+.cart-btn {
+    background: green;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: bolder;
+    font-size: larger;
+}
+.rupee {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+ 
+/* Footer Styling */
+footer{
+    display:flex; /* Flex layout to arrange in row */
+    justify-content: space-around;
+    padding:20px 50px;
+    background-color: #2E7D32;
+    color:#FFFFFF;
+    margin-top: 80px;
+ }
+ 
+ 
+ /* Footer List Items */
+ footer li{
+    list-style: none;
+    font-size: 20px;
+ }
+ 
+ /* To remove default padding from footer ul */
+ footer ul{
+    padding:0px;
+ }
+ 
+ .locateContent{
+    margin-bottom: 10px;
+ }
+ 
+ .footerContent h3{
+ font-size: 22px;
+ }
+ 
+ .locateContent p{
+    margin:0; /* To remove default margin */
+    font-size: 20px;
+ 
+ }
+
+
+
+ /* Media Queries */
+
+/* Small screens (Mobile devices: 320px - 767px) */
+@media (min-width: 320px) and (max-width: 767px) {
+   .header_container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap:10px;
+      margin-bottom: 10px;
+   }
+
+   .logo img {
+      width: 120px;
+      height: 120px;
+   }
+
+   .free_shipping {
+      padding: 10px;
+      width: 100%;
+      font-size: 12px;
+   }
+
+   .login, .search {
+      width: 100%;
+      justify-content: center;
+      padding: 5px;
+   }
+
+   .search h3 {
+      display: none;
+   }
+
+
+/*  */
+.menu {
+   flex-direction: column;
+   height: auto;
+   padding: 10px 0;
+}
+.menu-links {
+   display: none; /* Hide menu by default */
+   flex-direction: column;
+   width: 100%;
+   background-color: #2E7D32;
+   text-align: center;
+   padding: 10px 0;
+}
+.menu-links a {
+   padding: 10px;
+   font-size: 18px;
+}
+.menu-toggle {
+   display: block;
+}
+.menu.active .menu-links {
+   display: flex; /* Show menu when active */
+}
+
+
+/*  */
+.modal_content {
+   width: 75%;
+   height: auto;
+   /* padding: 5px; */
+}
+
+.input_container input {
+   width:65%;
+   /* padding-left: 35px; */
+}
+
+.input_container img {
+   left: 10%;
+   top: 20%;
+   width: 20px;
+   height: 20px;
+}
+
+.btn {
+   padding: 12px 30px;
+   font-size: 14px;
+}
+
+form h3 {
+   padding: 0px;
+   display:block;
+}
+
+/*  */
+.fertilizerTypes {
+   flex-direction: column; /* Stack items vertically */
+   align-items: center;
+}
+
+.fertilizerItem {
+   padding: 0px;
+}
+
+.fertilizerItem img {
+   width: 150px;
+   height: 150px;
+}
+
+.soilContainer h2 {
+   font-size: 28px;
+}
+
+.fertilizerItem h1 {
+   font-size: 20px;
+}
+
+/*  */
+.product-container {
+   display: grid;
+   grid-template-columns: 1fr; /* Single column layout */
+   gap: 15px;
+}
+
+/* .product {
+   width: 100%;
+} */
+
+.product h3 {
+   font-size: 16px;
+}
+
+.cart-btn {
+   font-size: 14px;
+   padding: 8px;
+}
+
+/*  */
+footer {
+   flex-direction: column; /* Stack footer content in a single column */
+   padding: 20px 40px;
+}
+
+.footerContent {
+   margin-bottom: 20px; /* Add space between sections */
+}
+
+.footerContent h3 {
+   font-size: 26px;
+
+}
+
+footer li,
+.locateContent p {
+   font-size: 16px;
+}
+}
+
+
+/* Medium screens (Tablets: 768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+   .header_container {
+      flex-wrap: wrap;
+      justify-content: space-around;
+   }
+
+   .logo img {
+      width: 150px;
+      height: 150px;
+   }
+
+   .free_shipping {
+      font-size: 14px;
+      padding: 10px 20px;
+   }
+
+   .login, .search {
+      /* width: auto; */
+      padding: 5px 10px;
+      margin-bottom: 20px;
+   }
+
+   /*  */
+   .menu {
+      flex-wrap: wrap;
+      justify-content:space-evenly;
+      height: auto;
+      padding: 15px 0;
+  }
+   .menu-links a {
+      padding: 10px 18px;
+      font-size: 15px;
+  }  
+
+/*  */
+.modal_content {
+   width: 60%;
+   height: auto;
+}
+
+.input_container input {
+   width: 80%;
+   padding-left: 40px;
+}
+
+.input_container img {
+   left: 6%;
+   top: 20%;
+   width: 22px;
+   height: 22px;
+}
+
+.btn {
+   padding: 14px 32px;
+   font-size: 15px;
+}
+
+form h3 {
+   padding: 10px 40px;
+}
+
+/*  */
+
+.fertilizerTypes {
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 20px;
+}
+
+.fertilizerItem {
+   flex: 1 1 calc(50% - 40px); /* Two items per row */
+   max-width: 300px;
+}
+
+.fertilizerItem img {
+   width: 160px;
+   height: 160px;
+}
+
+.soilContainer h2 {
+   font-size: 32px;
+}
+
+.fertilizerItem h1 {
+   font-size: 22px;
+}
+
+.fertilizerItem {
+   padding:0;
+}
+
+/*  */
+.product-container {
+   grid-template-columns: repeat(2, 1fr); /* Two columns */
+   gap: 20px;
+}
+
+.product h3 {
+   font-size: 18px;
+}
+
+.cart-btn {
+   font-size: 16px;
+}
+
+/*  */
+footer {
+   flex-wrap: wrap; /* Allow items to wrap if needed */
+   justify-content: space-between;
+   padding: 20px 40px;
+}
+
+.footerContent {
+   width: 45%; /* Two columns layout */
+   margin-bottom: 20px;
+}
+
+.footerContent h3 {
+   font-size: 22px;
+}
+
+footer li,
+.locateContent p {
+   font-size: 18px;
+}
+}
+
+
+/* Large screens (Laptops: 1024px - 1300px) */
+@media (min-width: 1024px) and (max-width: 1300px) {
+   .header_container {
+      flex-wrap: nowrap;
+      gap:45px;
+   }
+
+   .logo img {
+      width: 160px;
+      height: 160px;
+   }
+
+   .free_shipping {
+      font-size: 16px;
+      padding: 10px 30px;
+   }
+
+   .login, .search {
+      width: auto;
+      padding: 8px 15px;
+   }
+
+   /*  */
+
+   .modal_content {
+      width: 50%;
+  }
+
+  .input_container input {
+      width: 70%;
+      padding-left: 45px;
+  }
+
+  .input_container img {
+      left: 12%;
+      top: 18%;
+      width: 24px;
+      height: 24px;
+  }
+
+  .btn {
+      padding: 15px 35px;
+      font-size: 16px;
+  }
+
+  form h3 {
+      padding: 12px 45px;
+  }
+
+/*  */
+.menu {
+   justify-content: space-between;
+   padding: 0 50px;
+}
+.menu-links a {
+   padding: 10px 20px;
+   font-size: 20px;
+}
+
+
+/*  */
+.fertilizerTypes {
+   justify-content: space-around;
+   gap: 15px;
+}
+
+.fertilizerItem img {
+   width: 170px;
+   height: 170px;
+}
+
+.fertilizerItem h1 {
+   font-size: 24px;
+}
+.fertilizerItem {
+   padding:0;
+}
+
+/*  */
+.product-container {
+   grid-template-columns: repeat(3, 1fr); /* Three columns */
+   gap: 20px;
+}
+/*  */
+footer {
+   padding: 30px 60px;
+   gap:25px;
+}
+
+.footerContent h3 {
+   font-size: 26px;
+}
+
+footer li,
+.locateContent p {
+   font-size: 20px;
+}
+}

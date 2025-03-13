@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Nursery</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+
+    <header>
+        <section class="header_container">
+            <div class="logo">
+                <img src="./assets/images/logo.png" alt="Plant Nursery Logo">
+            </div>
+            <div class="free_shipping">
+                <h3>FREE SHIPPING ON ALL ORDERS ABOVE Rs.499/-</h3>
+                <h3>HIRE-A-GARDENER FROM Rs.549/-</h3>
+            </div>
+            <div class="login">
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAddJREFUWEfdmAEyRDEMhrMnwUlwEpwEJ7FOgpPgJPhMa16zbfp3X403MrOD0eZ9Tf6kebuzjdluYzz2b4BOzezazM7NjN/5vKVo8/PFzJ7TZygJoxG6M7PbgScA9/i1nn2SqUAXZvaQIiE5dosAu1EipgCRGmDWmhStHhAgAM20+yiFEdCsyNQO04RqAaGZp5lhUTXVAgIGKMWyNk6S6Ef2nfkH1IDUVLUqZ6Qiqbz9EqoG9CqW92VQxmrKOVQRJQ+kRocuDFBkatqLg3kgtcwJM+GOTO3qRcV5IPVUYS9JlOrhimh7IFU/SspUX4WOPNCHUudpzQxR42oaUOtuUiusWu3HamjpDDBS+J7mI7UxZh9hhFRRD2S2uzQUtVqqPkLLv5keR6xoIT5lOKM6ekbZ4yiPrX59HnGV6ZJO/eOndnVEaWMj1dUCqYHhL4pawTByuR7cO70wpv8D04KSLlcc0GV9tSA+HKjRybwtf9UDjg5o0ly8iFzUk6qN9dgRFlG33ruyXpgcWqI+SFU+RG/IV9rAaGMMJ4UeEOAKlKjvbw0WE6LfqACxJ6oUBWbqi+KyWtDFlTji5pv8V16lW52YLxswqulPvmxQ0rNqjaqhVQ8Z2bw5oE9sbHIlqeUz0gAAAABJRU5ErkJggg==" />
+                <h3>
+                    <a href="#"> Login/Register</a>
+                </h3>
+            </div>
+            <div class="search">
+                <i class='bx bx-search'></i>
+                <h3>Search</h3>
+            </div>
+        </section>
+    </header>
+
+    <!-- Navigation Bar -->
+
+    <nav class="menu">
+        <div class="menu-toggle" onclick="toggleMenu()">☰ MENU</div>
+        <div class="menu-links">
+            <a href="./index.html">Gardening</a>
+            <a href="./gardener.html">Hire Gardener</a>
+            <a href="./fertilizer.html">Fertilizer</a>
+            <a href="./accessories.html">Accessories</a>
+            <a href="./corporate.html">Corporate</a>
+            <a href="./identity.html">Our Identity</a>
+            <a href="./reachout.html">Reach Out</a>
+        </div>
+    </nav>
+
+
+    <!-- Login / Registration Modal -->
+
+    <section class="modal" id="loginModal">
+        <div class="modal_content">
+            <span class="close">&times;</span>
+            <h2>Login / Register</h2>
+            <form>
+                <div class="input_container">
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUJJREFUSEvVld1tg0AQhIdO7EqCO7E7YCsIqWDpIE4ldiqJOyFMtGcdx90tQuYhJyEeTuy3fzM02Pk0O8fHKoCqHhrgE0AL4MFnBD5E5O4l6AJU9WzB01iEfIlIX4NUAaraNsCNASzjntVMFRD6bpVcapVUAYMq23IOweNMo8runcipVIUH+AFwmFpxFBH2/nlsLrx/dCLHlwMYcFAd+e5Eiol6FbD/baFFvc3h2olcNlUQtyFsTDJkDv+0ecjMSlVDposkR4AbdN28puHDXYXmKdW794TG9ryZRSyUbEL7rqk5CzAFU2RU7ZpD28gqegGI7aFmBbZNNEFaBk0wu1ELwKD6p97pqe53vACxN6WqngHW+kvas3jLUlHOAJG5ufudgQTnnZlfCiiamzfpkvmlANe8aqCc+bl/NC9z7/7/A34B2RaxGb7CvlYAAAAASUVORK5CYII=" />
+                    <input type="text" placeholder="Name" required>
+                </div>
+
+                <div class="input_container">
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAALdJREFUSEvtlr0NAjEMhZ83uY41YBOoaHkTABM4G0DLFFzLFDDJBQUdJ3E/slOkQEraPPmLLdsvgsJHCsfHLEBV1wJcADTOB7QR2JF8jfUTgKo2AjydgQdZBM4kTx5Aev0dQHsgNxaoz3ZRP5dBBfxUtZYItYvqoE23qdUV491k6d2DFkJYxa57QORGcv8F/Q9gaW1nZ5ACBdVkOF43+7DdhpPEqroV4JgBufYA2zItB8u9L/6reANSxsoZZX8HLwAAAABJRU5ErkJggg==" />
+                    <input type="tel" placeholder="Mobile" required>
+                </div>
+                <div class="input_container">
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAQtJREFUSEvdle8RgjAMxV83wUnUTXQDMoE4QdjAcxLZRDbBe722F3vCFdAPko+Y5Ne8/NHhx+Z+nB8bAqjqwQE3ANVK2foBOItIxzxJolb1AeCwMnkM72uRXQ4Y+GEAdiLSLwGpauWAJ2NrEf94W4EHAGCJdxFp5kCCxFTB2xTAOwzAtRSiqo0DLvZBowAmNs6s5jgmWZCEg+F7Z2NHAfwhBLJcTtTbVMRXZpIkn1bVSz0JoEOAsOxT3pdMkq4WOUZwMSBCCIiSBQn2VpK8T7MARg5CqHWy0Bu/TNYWAYxkftPtpn4NULoTiyv4C8A3j10a3XSLwuJw7tde1M/nulTjuX4b+sucW3qp/ws1f7QZ7GHpOQAAAABJRU5ErkJggg==" />
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="input_container">
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOhJREFUSEvtld0RgjAQhDedQCdYidpBrgKxgqUD7UQ6kU7QmwmOY0IOVGZ4gEc49tvcXxwWftzC+pgEIFk5YA+gCoa6HjiLSGsZNAEkDw64pIQCpM5BsoDg/KYCKgbgGsQUqicqeqAUkW4MkgU0pIpXKackawecFOpFjt8Cev3Ri0RGSBbPU9wBdF6k/DtABRty1MAAtFKUFVgnIHSOFm/oeavVh+9tajaiFDWkFq6YqvoR13qR3fu7FMAsXAo+Vo8N8MrWliKza1eVol8GLdqsqTWs16PeYHOnedqqMJM9M8C8k2fqReEPOKaaGeCt1rgAAAAASUVORK5CYII=" />
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn">Login/Register</button>
+                <p>OR</p>
+                <h3>Sign Up with Google</h3>
+            </form>
+        </div>
+    </section>
+
+    <!-- Carousel Section -->
+    <section class="bannerCarousel">
+        <div class="carousel">
+            <div class="carousel-inner">
+                <img src="./assets/images/carous1.jpg" class="carousel-item" alt="Banner 1">
+                <img src="./assets/images/carous2.jpg" class="carousel-item" alt="Banner 2">
+                <img src="./assets/images/carous3.jpg" class="carousel-item" alt="Banner 3">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Plants Section -->
+    <section class="plants">
+        <h2>PLANTS</h2>
+        <div class="plantContainer">
+            <div class="plant_wrapper">
+                <div class="plant_item">
+                    <img src="./assets/images/INDOOR PLANTS.jpg" alt="Indoor Plants">
+                </div>
+                <h1>Indoor Plants</h1>
+            </div>
+            <div class="plant_wrapper">
+                <div class="plant_item">
+                    <img src="./assets/images/outdoor.jpg" alt="Outdoor Plants">
+                </div>
+                <h1>Outdoor Plants</h1>
+            </div>
+            <div class="plant_wrapper">
+                <div class="plant_item">
+                    <img src="./assets/images/airpurifier.jpg" alt="Air Purifier Plants">
+                </div>
+                <h1>Air Purifier Plants</h1>
+            </div>
+            <div class="plant_wrapper">
+                <div class="plant_item">
+                    <img src="./assets/images/hangingrose.jpg" alt="Hanging Plants">
+                </div>
+                <h1>Hanging Plants</h1>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Pots Section -->
+
+    <section class="potsContainer">
+        <h2>POTS</h2>
+
+        <div class="potsTypes">
+
+            <div class="potsItem">
+                <h1>BASIC POTS</h1>
+                <a href="#"><img src="./assets/images/basicpots.jpg" alt="Basic Pots"></a>
+            </div>
+            <div class="potsItem">
+                <h1>CERAMIC POTS</h1>
+                <a href="#"><img src="./assets/images/ceramicpots.jpg" alt="Ceramic Pots"></a>
+            </div>
+            <div class="potsItem">
+                <h1>DESIGNER POTS</h1>
+                <a href="#"><img src="./assets/images/designerpots.jpg" alt="Designer Pots"></a>
+            </div>
+            <div class="potsItem">
+                <h1>METAL POTS</h1>
+                <a href="#"><img src="./assets/images/metalpots.jpg" alt="Metal Pots"></a>
+            </div>
+            <div class="potsItem">
+                <h1>POT STAND</h1>
+                <a href="#"><img src="./assets/images/potstand.jpg" alt="Pot stand"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seeds Section -->
+
+    <section class="seeds">
+        <h2>SEEDS</h2>
+        <div class="seedContainer">
+            <div class="seedItem">
+                <img src="./assets/images/trendingseeds.avif" alt="Trending Seeds">
+                <h3>TRENDING <span>SEEDS</span></h3>
+            </div>
+            <div class="seedItem">
+                <img src="./assets/images/vegetableseeds.jpg" alt="Vegetable Seeds">
+                <h3>VEGETABLE <span>SEEDS</span></h3>
+            </div>
+            <div class="seedItem">
+                <img src="./assets/images/flowerseeds.jpg" alt="Flower Seeds">
+                <h3>FLOWER <span>SEEDS</span></h3>
+            </div>
+            <div class="seedItem">
+                <img src="./assets/images/treeseeds.jpg" alt="Tree Seeds">
+                <h3>TREE <span>SEEDS</span></h3>
+            </div>
+            <div class="seedItem">
+                <img src="./assets/images/rainysowingseed.avif" alt="Rainy Sowing Seeds">
+                <h3>RAINY SOWING <span>SEEDS</span></h3>
+            </div>
+            <div class="seedItem">
+                <img src="./assets/images/organicseed.jpg" alt="Organic Seeds">
+                <h3>ORGANIC <span>SEEDS</span></h3>
+            </div>
+            <div class="seedItem">
+                <img src="./assets/images/fruitseeds.jpg" alt="Fruit Seeds">
+                <h3>FRUIT <span>SEEDS</span></h3>
+            </div>
+            <div class="seedItem">
+                <img src="./assets/images/otherseeds.jpg" alt="Other Seeds">
+                <h3>OTHER <span>SEEDS</span></h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+
+    <section class="blogs">
+        <h2>BLOGS</h2>
+        <div class="blogItem">
+            <img src="./assets/images/blog1.jpg" alt="blog1">
+            <div class="blogContent">
+                <p>Gardening destresses and rejuvenates the mind to a great extent. Even physician advice patients those
+                    who struggle from high BP and sugar to take up gradening as a hobby. You can make your open space
+                    livelier and environmentally friendly whrn you plant plenty of plants and trees inside the garden.
+                </p>
+            </div>
+
+        </div>
+        <div class="blogItem">
+            <img src="./assets/images/blog2.jpg" alt="blog2">
+            <div class="blogContent">
+                <p> Plants and trees play a vital role in safeguarding our planet from destruction. It is now your turn
+                    to plant plenty of colorful trees in your garden and protect our earth from catastrophes. Plants and
+                    trees produce oxygen round the clock and support our ecological system in plenty of ways.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+
+    <section class="footer">
+        <footer>
+            <div class="footerContent">
+                <h3>QUICK LINKS</h3>
+                <ul>
+                    <li>Gardening</li>
+                    <li>Hire Gardener</li>
+                    <li>Fertilizer</li>
+                    <li>Accessories</li>
+                    <li>Corporate</li>
+                    <li>Our Identity</li>
+                    <li>Reach Out</li>
+                </ul>
+            </div>
+            <div class="footerContent">
+                <h3>POLICY</h3>
+                <ul>
+                    <li>Terms and Coditions</li>
+                    <li>About Us</li>
+                    <li>Return Policy</li>
+                    <li>Shipping & Returns</li>
+                    <li>Store Policy</li>
+                    <li>Payment Methods</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+            <div class="footerContent">
+                <h3>LOCATE US</h3>
+                <div class="locateContent">
+                    <p>No.11/21, XYZ street,</p>
+                    <p>ABC Nagar, AHJSJ</p>
+                    <p>Chennai- 6000XX</p>
+                </div>
+                <div class="locateContent">
+                    <p>+91 9123456789</p>
+                </div>
+                <div class="locateContent">
+                    <p>blosoomplantstore@gmail.com</p>
+                </div>
+            </div>
+            <div class="footerContent">
+                <h3>WE ARE SOCIAL</h3>
+                <ul>
+                    <li>Whatsapp</li>
+                    <li>Instagram</li>
+                    <li>Facebook</li>
+                    <li>YouTube</li>
+                    <li>Twitter</li>
+                </ul>
+            </div>
+        </footer>
+
+    </section>
+
+    <script src="./assets/js/toggle.js"></script>
+    <script src="./assets/js/login.js"></script>
+    <script src="./assets/js/carousel.js"></script>
+</body>
+
+</html>
