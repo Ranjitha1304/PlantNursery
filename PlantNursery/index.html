@@ -23,16 +23,20 @@
                 <h3>HIRE-A-GARDENER FROM Rs.549/-</h3>
             </div>
             <div class="login">
-                <img
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAddJREFUWEfdmAEyRDEMhrMnwUlwEpwEJ7FOgpPgJPhMa16zbfp3X403MrOD0eZ9Tf6kebuzjdluYzz2b4BOzezazM7NjN/5vKVo8/PFzJ7TZygJoxG6M7PbgScA9/i1nn2SqUAXZvaQIiE5dosAu1EipgCRGmDWmhStHhAgAM20+yiFEdCsyNQO04RqAaGZp5lhUTXVAgIGKMWyNk6S6Ef2nfkH1IDUVLUqZ6Qiqbz9EqoG9CqW92VQxmrKOVQRJQ+kRocuDFBkatqLg3kgtcwJM+GOTO3qRcV5IPVUYS9JlOrhimh7IFU/SspUX4WOPNCHUudpzQxR42oaUOtuUiusWu3HamjpDDBS+J7mI7UxZh9hhFRRD2S2uzQUtVqqPkLLv5keR6xoIT5lOKM6ekbZ4yiPrX59HnGV6ZJO/eOndnVEaWMj1dUCqYHhL4pawTByuR7cO70wpv8D04KSLlcc0GV9tSA+HKjRybwtf9UDjg5o0ly8iFzUk6qN9dgRFlG33ruyXpgcWqI+SFU+RG/IV9rAaGMMJ4UeEOAKlKjvbw0WE6LfqACxJ6oUBWbqi+KyWtDFlTji5pv8V16lW52YLxswqulPvmxQ0rNqjaqhVQ8Z2bw5oE9sbHIlqeUz0gAAAABJRU5ErkJggg==" />
-                <h3>
+                    <i class='bx bxs-user-circle'></i>
+                    <h3>
                     <a href="#"> Login/Register</a>
                 </h3>
             </div>
-            <div class="search">
+            <!-- <div class="search">
                 <i class='bx bx-search'></i>
                 <h3>Search</h3>
+            </div> -->
+            <div class="search">
+                <i class='bx bx-search'></i>
+                <input type="text" placeholder="Search" class="search-input">
             </div>
+            
         </section>
     </header>
 
@@ -54,31 +58,32 @@
 
     <!-- Login / Registration Modal -->
 
+
+
     <section class="modal" id="loginModal">
         <div class="modal_content">
             <span class="close">&times;</span>
             <h2>Login / Register</h2>
-            <form>
+            <form id="loginForm">
                 <div class="input_container">
-                    <img
-                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUJJREFUSEvVld1tg0AQhIdO7EqCO7E7YCsIqWDpIE4ldiqJOyFMtGcdx90tQuYhJyEeTuy3fzM02Pk0O8fHKoCqHhrgE0AL4MFnBD5E5O4l6AJU9WzB01iEfIlIX4NUAaraNsCNASzjntVMFRD6bpVcapVUAYMq23IOweNMo8runcipVIUH+AFwmFpxFBH2/nlsLrx/dCLHlwMYcFAd+e5Eiol6FbD/baFFvc3h2olcNlUQtyFsTDJkDv+0ecjMSlVDposkR4AbdN28puHDXYXmKdW794TG9ryZRSyUbEL7rqk5CzAFU2RU7ZpD28gqegGI7aFmBbZNNEFaBk0wu1ELwKD6p97pqe53vACxN6WqngHW+kvas3jLUlHOAJG5ufudgQTnnZlfCiiamzfpkvmlANe8aqCc+bl/NC9z7/7/A34B2RaxGb7CvlYAAAAASUVORK5CYII=" />
-                    <input type="text" placeholder="Name" required>
-                </div>
-
-                <div class="input_container">
-                    <img
-                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAALdJREFUSEvtlr0NAjEMhZ83uY41YBOoaHkTABM4G0DLFFzLFDDJBQUdJ3E/slOkQEraPPmLLdsvgsJHCsfHLEBV1wJcADTOB7QR2JF8jfUTgKo2AjydgQdZBM4kTx5Aev0dQHsgNxaoz3ZRP5dBBfxUtZYItYvqoE23qdUV491k6d2DFkJYxa57QORGcv8F/Q9gaW1nZ5ACBdVkOF43+7DdhpPEqroV4JgBufYA2zItB8u9L/6reANSxsoZZX8HLwAAAABJRU5ErkJggg==" />
-                    <input type="tel" placeholder="Mobile" required>
+                    <i class='bx bxs-user'></i>
+                    <input type="text" id="name" placeholder="Name" required>
+                    <small class="error-message"></small>
                 </div>
                 <div class="input_container">
-                    <img
-                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAQtJREFUSEvdle8RgjAMxV83wUnUTXQDMoE4QdjAcxLZRDbBe722F3vCFdAPko+Y5Ne8/NHhx+Z+nB8bAqjqwQE3ANVK2foBOItIxzxJolb1AeCwMnkM72uRXQ4Y+GEAdiLSLwGpauWAJ2NrEf94W4EHAGCJdxFp5kCCxFTB2xTAOwzAtRSiqo0DLvZBowAmNs6s5jgmWZCEg+F7Z2NHAfwhBLJcTtTbVMRXZpIkn1bVSz0JoEOAsOxT3pdMkq4WOUZwMSBCCIiSBQn2VpK8T7MARg5CqHWy0Bu/TNYWAYxkftPtpn4NULoTiyv4C8A3j10a3XSLwuJw7tde1M/nulTjuX4b+sucW3qp/ws1f7QZ7GHpOQAAAABJRU5ErkJggg==" />
-                    <input type="email" placeholder="Email" required>
+                    <i class='bx bxs-phone'></i>
+                    <input type="tel" id="mobile" placeholder="Mobile" required>
+                    <small class="error-message"></small>
                 </div>
                 <div class="input_container">
-                    <img
-                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOhJREFUSEvtld0RgjAQhDedQCdYidpBrgKxgqUD7UQ6kU7QmwmOY0IOVGZ4gEc49tvcXxwWftzC+pgEIFk5YA+gCoa6HjiLSGsZNAEkDw64pIQCpM5BsoDg/KYCKgbgGsQUqicqeqAUkW4MkgU0pIpXKackawecFOpFjt8Cev3Ri0RGSBbPU9wBdF6k/DtABRty1MAAtFKUFVgnIHSOFm/oeavVh+9tajaiFDWkFq6YqvoR13qR3fu7FMAsXAo+Vo8N8MrWliKza1eVol8GLdqsqTWs16PeYHOnedqqMJM9M8C8k2fqReEPOKaaGeCt1rgAAAAASUVORK5CYII=" />
-                    <input type="password" placeholder="Password" required>
+                    <i class='bx bxs-envelope'></i>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <small class="error-message"></small>
+                </div>
+                <div class="input_container">
+                    <i class='bx bxs-lock-alt'></i>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <small class="error-message"></small>
                 </div>
                 <button type="submit" class="btn">Login/Register</button>
                 <p>OR</p>
@@ -86,6 +91,46 @@
             </form>
         </div>
     </section>
+
+
+
+
+    <!-- <section class="modal" id="loginModal">
+        <div class="modal_content">
+            <span class="close">&times;</span>
+            <h2>Login / Register</h2>
+            <form id = "loginForm">
+                <div class="input_container">
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUJJREFUSEvVld1tg0AQhIdO7EqCO7E7YCsIqWDpIE4ldiqJOyFMtGcdx90tQuYhJyEeTuy3fzM02Pk0O8fHKoCqHhrgE0AL4MFnBD5E5O4l6AJU9WzB01iEfIlIX4NUAaraNsCNASzjntVMFRD6bpVcapVUAYMq23IOweNMo8runcipVIUH+AFwmFpxFBH2/nlsLrx/dCLHlwMYcFAd+e5Eiol6FbD/baFFvc3h2olcNlUQtyFsTDJkDv+0ecjMSlVDposkR4AbdN28puHDXYXmKdW794TG9ryZRSyUbEL7rqk5CzAFU2RU7ZpD28gqegGI7aFmBbZNNEFaBk0wu1ELwKD6p97pqe53vACxN6WqngHW+kvas3jLUlHOAJG5ufudgQTnnZlfCiiamzfpkvmlANe8aqCc+bl/NC9z7/7/A34B2RaxGb7CvlYAAAAASUVORK5CYII=" />
+                    <input type="text" id="name" placeholder="Name" required>
+                    <small class="error-message"></small>
+                </div>
+
+                <div class="input_container">
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAALdJREFUSEvtlr0NAjEMhZ83uY41YBOoaHkTABM4G0DLFFzLFDDJBQUdJ3E/slOkQEraPPmLLdsvgsJHCsfHLEBV1wJcADTOB7QR2JF8jfUTgKo2AjydgQdZBM4kTx5Aev0dQHsgNxaoz3ZRP5dBBfxUtZYItYvqoE23qdUV491k6d2DFkJYxa57QORGcv8F/Q9gaW1nZ5ACBdVkOF43+7DdhpPEqroV4JgBufYA2zItB8u9L/6reANSxsoZZX8HLwAAAABJRU5ErkJggg==" />
+                    <input type="tel" id="mobile" placeholder="Mobile" required pattern="[0-9]{10}">
+                    <small class="error-message"></small>
+                </div>
+                <div class="input_container">
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAQtJREFUSEvdle8RgjAMxV83wUnUTXQDMoE4QdjAcxLZRDbBe722F3vCFdAPko+Y5Ne8/NHhx+Z+nB8bAqjqwQE3ANVK2foBOItIxzxJolb1AeCwMnkM72uRXQ4Y+GEAdiLSLwGpauWAJ2NrEf94W4EHAGCJdxFp5kCCxFTB2xTAOwzAtRSiqo0DLvZBowAmNs6s5jgmWZCEg+F7Z2NHAfwhBLJcTtTbVMRXZpIkn1bVSz0JoEOAsOxT3pdMkq4WOUZwMSBCCIiSBQn2VpK8T7MARg5CqHWy0Bu/TNYWAYxkftPtpn4NULoTiyv4C8A3j10a3XSLwuJw7tde1M/nulTjuX4b+sucW3qp/ws1f7QZ7GHpOQAAAABJRU5ErkJggg==" />
+                    <input type="email" id="email" placeholder="Email" required>
+                    <small class="error-message"></small>
+                </div>
+                <div class="input_container">
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOhJREFUSEvtld0RgjAQhDedQCdYidpBrgKxgqUD7UQ6kU7QmwmOY0IOVGZ4gEc49tvcXxwWftzC+pgEIFk5YA+gCoa6HjiLSGsZNAEkDw64pIQCpM5BsoDg/KYCKgbgGsQUqicqeqAUkW4MkgU0pIpXKackawecFOpFjt8Cev3Ri0RGSBbPU9wBdF6k/DtABRty1MAAtFKUFVgnIHSOFm/oeavVh+9tajaiFDWkFq6YqvoR13qR3fu7FMAsXAo+Vo8N8MrWliKza1eVol8GLdqsqTWs16PeYHOnedqqMJM9M8C8k2fqReEPOKaaGeCt1rgAAAAASUVORK5CYII=" />
+                    <input type="password" id="password" placeholder="Password" required>
+                    <small class="error-message"></small>
+                </div>
+                <button type="submit" class="btn">Login/Register</button>
+                <p>OR</p>
+                <h3>Sign Up with Google</h3>
+            </form>
+        </div>
+    </section> -->
 
     <!-- Carousel Section -->
     <section class="bannerCarousel">
@@ -140,23 +185,23 @@
 
             <div class="potsItem">
                 <h1>BASIC POTS</h1>
-                <a href="#"><img src="./assets/images/basicpots.jpg" alt="Basic Pots"></a>
+                <a href="./pots.html"><img src="./assets/images/basicpots.jpg" alt="Basic Pots"></a>
             </div>
             <div class="potsItem">
                 <h1>CERAMIC POTS</h1>
-                <a href="#"><img src="./assets/images/ceramicpots.jpg" alt="Ceramic Pots"></a>
+                <a href="./pots.html"><img src="./assets/images/ceramicpots.jpg" alt="Ceramic Pots"></a>
             </div>
             <div class="potsItem">
                 <h1>DESIGNER POTS</h1>
-                <a href="#"><img src="./assets/images/designerpots.jpg" alt="Designer Pots"></a>
+                <a href="./pots.html"><img src="./assets/images/designerpots.jpg" alt="Designer Pots"></a>
             </div>
             <div class="potsItem">
                 <h1>METAL POTS</h1>
-                <a href="#"><img src="./assets/images/metalpots.jpg" alt="Metal Pots"></a>
+                <a href="./pots.html"><img src="./assets/images/metalpots.jpg" alt="Metal Pots"></a>
             </div>
             <div class="potsItem">
                 <h1>POT STAND</h1>
-                <a href="#"><img src="./assets/images/potstand.jpg" alt="Pot stand"></a>
+                <a href="./pots.html"><img src="./assets/images/potstand.jpg" alt="Pot stand"></a>
             </div>
         </div>
     </section>
