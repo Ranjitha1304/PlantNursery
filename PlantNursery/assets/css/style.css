@@ -52,6 +52,10 @@
    cursor: pointer;
 }
 
+.bxs-user-circle{
+   font-size: 42px;
+}
+
 /* Text inside login button */
 .login h3 {
    padding-left: 5px;  /*To Add space between icon and text */
@@ -64,11 +68,7 @@
    color: black;
 }
 
-/* Set size for login icon */
-.login img {
-   width: 40px;
-   height: 40px;
-}
+
 
 /* Search bar styling */
 .search {
@@ -76,8 +76,42 @@
    align-items: center;
    border: 1px solid #2E7D32;
    border-radius: 20px; /* Corner styling */
-   padding: 0px 15px; /*Inner padding */
-   width: 250px; /* Set a proper width instead of large padding */
+   padding: 15px 15px; /* Adjusted padding */
+   width: 250px; /* Set a proper width */
+   background-color: #FFFFFF; /* Background color */
+}
+
+.bx-search {
+   font-size: larger;
+   color: grey;
+}
+
+.search-input {
+   border: none;
+   outline: none;
+   padding-left: 10px;
+   font-size: 16px;
+   width: 100%;
+}
+
+.search-input::placeholder {
+   color: grey;
+}
+
+
+
+
+
+
+
+/* Search bar styling */
+/* .search {
+   display: flex;
+   align-items: center;
+   border: 1px solid #2E7D32;
+   border-radius: 20px; 
+   padding: 0px 15px; 
+   width: 250px; 
 }
 
 .bx-search {
@@ -87,7 +121,7 @@ font-size: larger;
    color: grey;
    padding-left: 5px;
    font-weight: bold;
-}
+} */
 
 
  /* Navigation menu */
@@ -197,30 +231,68 @@ font-size: larger;
    padding:0 5px; /* Padding inside */
  }
 
- /* Input container styling */
- .input_container {
-   position:relative; /* Relative for absolute positioning(img) */
-   width:100%;
-   margin:15px 0;  /* Spacing between inputs */
- }
 
+
+
+ .input_container {
+   display: flex;
+   align-items: center;
+   border: 1px solid #2E7D32;
+   padding: 10px;
+   border-radius: 10px;
+   margin-bottom: 28px;
+   position: relative;
+
+}
+
+.input_container i {
+   font-size: 20px;
+   color: #2E7D32;
+   margin-right: 8px;
+}
+
+.input_container input {
+   border: none;
+   outline: none;
+   width: 100%;
+}
+
+.error-message {
+   color: red;
+   font-size: 12px;
+   position: absolute;
+   bottom: -30px;
+   left: 10px;
+   display: none;
+}
+
+
+
+
+
+ /* Input container styling */
+ /* .input_container {
+   position:relative; 
+   width:100%;
+   margin:15px 0;  
+ } */
  /* Input field icons */
- .input_container img {
-   position:absolute; /* Position inside input */
-   left:20%; /* Adjusting left and top */
+ /* .input_container img {
+   position:absolute; 
+   left:20%; 
    top:15%;
    color:grey;
- }
+ } */
 
  /* Input field styling */
-.input_container input {
-   padding: 10px 10px 10px 40px; /* Space for icon */
+/* .input_container input {
+   padding: 10px 10px 10px 40px; 
    width:300px;
    border-radius: 10px;
    border: 2px solid #2E7D32;
    margin-bottom: 15px;
    font-size: larger;
-}
+} */
 
 /* Button styling */
 .btn {
@@ -231,6 +303,7 @@ font-size: larger;
    border-radius: 10px;
    font-weight: bolder;
    font-size: 15px;
+   margin-top: 20px;
 }
 /* Form heading styling */
 form h3 {
