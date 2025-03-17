@@ -29,10 +29,15 @@
                     <a href="#"> Login/Register</a>
                 </h3>
             </div>
-            <div class="search">
+            <!-- <div class="search">
                 <i class='bx bx-search'></i>
                 <h3>Search</h3>
+            </div> -->
+            <div class="search">
+                <i class='bx bx-search'></i>
+                <input type="text" placeholder="Search" class="search-input">
             </div>
+
         </section>
     </header>
 
@@ -54,6 +59,38 @@
     <!-- Login / Registration Modal -->
 
     <section class="modal" id="loginModal">
+        <div class="modal_content">
+            <span class="close">&times;</span>
+            <h2>Login / Register</h2>
+            <form id="loginForm">
+                <div class="input_container">
+                    <i class='bx bxs-user'></i>
+                    <input type="text" id="name" placeholder="Name" required>
+                    <small class="error-message"></small>
+                </div>
+                <div class="input_container">
+                    <i class='bx bxs-phone'></i>
+                    <input type="tel" id="mobile" placeholder="Mobile" required>
+                    <small class="error-message"></small>
+                </div>
+                <div class="input_container">
+                    <i class='bx bxs-envelope'></i>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <small class="error-message"></small>
+                </div>
+                <div class="input_container">
+                    <i class='bx bxs-lock-alt'></i>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <small class="error-message"></small>
+                </div>
+                <button type="submit" class="btn">Login/Register</button>
+                <p>OR</p>
+                <h3>Sign Up with Google</h3>
+            </form>
+        </div>
+    </section>
+
+    <!-- <section class="modal" id="loginModal">
         <div class="modal_content">
             <span class="close">&times;</span>
             <h2>Login / Register</h2>
@@ -84,7 +121,7 @@
                 <h3>Sign Up with Google</h3>
             </form>
         </div>
-    </section>
+    </section> -->
 
     <!-- General Content -->
 
@@ -244,9 +281,7 @@
             <div class="summary-box">
                 <p>Home Visit/Consultation</p>
                 <p>With CPN Hire-A-Gardener * 30 Min *</p>
-                <p><img
-                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAKlJREFUSEvdk20OgyAQRB830ZvoyexVPEm9SXsTdZKSNCR8rEgb3T+QAPOyM4ujcbnG+twbsBrsizqRsqg54LuBDhiACdB+AcaSDq0hS/z1ERZAoGT91aKfZuBtONWi0FsfstZTQo5Z9Ab6XLj+3BKyhOf94aNUXPdSAI2jPJewRlKruVIAiT9rIbmPVg3JAWRJFaQEUAUpBRyGWADmCcqN6SHB8NH1O9gAlqgjGYzG3TsAAAAASUVORK5CYII=" />
-                    499</p>
+                <p>₹ 499</p>
             </div>
 
             <p class="add-service-text">Do you want to add another service to the appointment?</p>
