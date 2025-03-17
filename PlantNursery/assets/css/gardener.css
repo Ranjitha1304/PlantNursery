@@ -69,14 +69,45 @@
    height: 40px;
 }
 
+
 /* Search bar styling */
 .search {
    display: flex;
    align-items: center;
    border: 1px solid #2E7D32;
    border-radius: 20px; /* Corner styling */
-   padding: 0px 15px; /*Inner padding */
-   width: 250px; /* Set a proper width instead of large padding */
+   padding: 15px 15px; /* Adjusted padding */
+   width: 250px; /* Set a proper width */
+   background-color: #FFFFFF; /* Background color */
+}
+
+.bx-search {
+   font-size: larger;
+   color: grey;
+}
+
+.search-input {
+   border: none;
+   outline: none;
+   padding-left: 10px;
+   font-size: 16px;
+   width: 100%;
+}
+
+.search-input::placeholder {
+   color: grey;
+}
+
+
+
+/* Search bar styling */
+/* .search {
+   display: flex;
+   align-items: center;
+   border: 1px solid #2E7D32;
+   border-radius: 20px; 
+   padding: 0px 15px; 
+   width: 250px; 
 }
 
 .bx-search {
@@ -86,7 +117,7 @@ font-size: larger;
    color: grey;
    padding-left: 5px;
    font-weight: bold;
-}
+} */
 
 /* Navigation menu */
 .menu {
@@ -168,29 +199,41 @@ font-size: larger;
  }
 
  /* Input container styling */
- .input_container {
-   position:relative; /* Relative for absolute positioning(img) */
-   width:100%;
-   margin:15px 0;  /* Spacing between inputs */
- }
-
- /* Input field icons */
- .input_container img {
-   position:absolute; /* Position inside input */
-   left:20%; /* Adjusting left and top */
-   top:15%;
-   color:grey;
- }
-
- /* Input field styling */
-.input_container input {
-   padding: 10px 10px 10px 40px; /* Space for icon */
-   width:300px;
+/*  */
+.input_container {
+   display: flex;
+   align-items: center;
+   border: 1px solid #2E7D32;
+   padding: 10px;
    border-radius: 10px;
-   border: 2px solid #2E7D32;
-   margin-bottom: 15px;
-   font-size: larger;
+   margin-bottom: 28px;
+   position: relative;
+
 }
+
+.input_container i {
+   font-size: 20px;
+   color: #2E7D32;
+   margin-right: 8px;
+}
+
+.input_container input {
+   border: none;
+   outline: none;
+   width: 100%;
+}
+
+.error-message {
+   color: red;
+   font-size: 12px;
+   position: absolute;
+   bottom: -30px;
+   left: 10px;
+   display: none;
+}
+
+
+
 
 /* Button styling */
 .btn {
@@ -274,7 +317,7 @@ font-weight: bolder;
     cursor: pointer;
 }
 .details {
-    max-width: 500px; /* Ensures equal width for all items */
+    width: 500px; /* Ensures equal width for all items */
     display: flex;
     flex-direction: column;
 }
@@ -305,7 +348,6 @@ footer{
     padding:20px 50px;
     background-color: #2E7D32;
     color:#FFFFFF;
-    /* font-family: 'poppins', sans-serif; */
     margin-top: 70px;
     margin-bottom: 70px;
  }
