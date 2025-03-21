@@ -139,7 +139,93 @@
 
     <!-- Booking section -->
 
-    <section class="bookingContainer">
+<!-- Booking Section -->
+<section class="bookingContainer">
+    <div class="booking" data-title="Home visit/Consultation" data-duration="30 Min" data-price="549">
+        <div class="image"><img src="assets/images/gardener1.jpg" alt="gardener"></div>
+        <div class="details"><h2>Home visit/Consultation</h2><a href="#">Read More</a></div>
+        <div class="rate"><h2>30 Min</h2><h2>₹549</h2></div>
+        <div class="bookingBtn"><button>BOOK NOW</button></div>
+    </div>
+    <div class="booking" data-title="1 Hr Gardener + Service" data-duration="1 Hr" data-price="1899">
+        <div class="image"><img src="assets/images/gardener2.jpg" alt="gardener"></div>
+        <div class="details"><h2>1 Hr Gardener + Service</h2><a href="#">Read More</a></div>
+        <div class="rate"><h2>1 Hr</h2><h2>₹1899</h2></div>
+        <div class="bookingBtn"><button>BOOK NOW</button></div>
+    </div>
+    <div class="booking" data-title="1 Hr Gardener" data-duration="1 Hr" data-price="899">
+        <div class="image"><img src="assets/images/gardener3.jpg" alt="gardener"></div>
+        <div class="details"><h2>1 Hr Gardener</h2><a href="#">Read More</a></div>
+        <div class="rate"><h2>1 Hr</h2><h2>₹899</h2></div>
+        <div class="bookingBtn"><button>BOOK NOW</button></div>
+    </div>
+    <div class="booking" data-title="2 Hr Gardener + Service" data-duration="2 Hr" data-price="2699">
+        <div class="image"><img src="assets/images/gardener4.jpg" alt="gardener"></div>
+        <div class="details"><h2>1 Hr Gardener + Service</h2><a href="#">Read More</a></div>
+        <div class="rate"><h2>2 Hr</h2><h2>₹2699</h2></div>
+        <div class="bookingBtn"><button>BOOK NOW</button></div>
+    </div>
+    <div class="booking" data-title="4 Hr Gardener + Service" data-duration="4 Hr" data-price="1899">
+        <div class="image"><img src="assets/images/gardener5.jpg" alt="gardener"></div>
+        <div class="details"><h2>4 Hr Gardener + Service</h2><a href="#">Read More</a></div>
+        <div class="rate"><h2>4 Hr</h2><h2>₹4699</h2></div>
+        <div class="bookingBtn"><button>BOOK NOW</button></div>
+    </div>
+
+    <div class="booking" data-title="Tree Pesticide/Fungicide" data-duration="4 Hr" data-price="1899">
+        <div class="image"><img src="assets/images/gardener6.jpg" alt="gardener"></div>
+        <div class="details"><h2>Tree Pesticide/Fungicide</h2><a href="#">Read More</a></div>
+        <div class="rate"><h2>4 Hr</h2><h2>₹7699</h2></div>
+        <div class="bookingBtn"><button>BOOK NOW</button></div>
+    </div>
+
+    <div class="booking" data-title="Plant Pesticide/Fungicide" data-duration="1 Hr" data-price="1899">
+        <div class="image"><img src="assets/images/gardener2.jpg" alt="gardener"></div>
+        <div class="details"><h2>Plant Pesticide/Fungicide</h2><a href="#">Read More</a></div>
+        <div class="rate"><h2>1 Hr</h2><h2>₹999</h2></div>
+        <div class="bookingBtn"><button>BOOK NOW</button></div>
+    </div>
+
+
+</section>
+
+
+<!-- Appointment Summary Modal -->
+<div id="appointmentModal" class="appointment-modal" style="display: none;">
+    <div class="appointment-modal-content">
+        <span class="close-appointment-modal">&times;</span>
+        <h2>Appointment Summary</h2>
+        <div class="summary-box"></div>
+        <p class="add-service-text">Do you want to add another service to the appointment?</p>
+        <button id="addServiceBtn">+ Add Service</button>
+        <button class="schedule-btn">Schedule Appointment</button>
+    </div>
+</div>
+
+<!-- Add Service Modal -->
+<div id="addServiceModal" class="appointment-modal" style="display: none;">
+    <div class="appointment-modal-content">
+        <h2>Appointment Summary</h2>
+        <div id="serviceList"></div>
+        <button id="cancelService">Cancel</button>
+        <button id="continueService">Continue</button>
+    </div>
+</div>
+
+<!-- Final Confirmation Modal -->
+<div id="finalModal" class="appointment-modal" style="display: none;">
+    <div class="appointment-modal-content">
+        <h2>Selected Services</h2>
+        <div id="selectedServices"></div>
+        <h3>Total: ₹<span id="totalPrice">0</span></h3>
+        <button class="schedule-btn">Schedule Appointment</button>
+    </div>
+</div>
+
+
+
+
+    <!-- <section class="bookingContainer">
 
         <div class="booking">
             <div class="image">
@@ -269,19 +355,19 @@
             </div>
 
         </div>
-    </section>
+    </section> -->
 
     <!-- Appointment Modal -->
      
-    <div id="appointmentModal" class="appointment-modal" style="display: none;">
+    <!-- <div id="appointmentModal" class="appointment-modal" style="display: none;">
         <div class="appointment-modal-content">
             <span class="close-appointment-modal">&times;</span>
             <h2>Appointment Summary</h2>
 
             <div class="summary-box">
                 <p>Home Visit/Consultation</p>
-                <p>With CPN Hire-A-Gardener * 30 Min *</p>
-                <p>₹ 499</p>
+                <p>With CPN Hire-A-Gardener * Duration *</p>
+                <p>₹ Price</p>
             </div>
 
             <p class="add-service-text">Do you want to add another service to the appointment?</p>
@@ -289,7 +375,7 @@
 
             <button class="schedule-btn">Schedule Appointment</button>
         </div>
-    </div>
+    </div> -->
 
 
 <!-- Footer Section -->
@@ -299,13 +385,13 @@
             <div class="footerContent">
                 <h3>QUICK LINKS</h3>
                 <ul>
-                    <li>Gardening</li>
-                    <li>Hire Gardener</li>
-                    <li>Fertilizer</li>
-                    <li>Accessories</li>
-                    <li>Corporate</li>
-                    <li>Our Identity</li>
-                    <li>Reach Out</li>
+                    <li><a href="./index.html">Gardening</a></li>
+                    <li><a href="./gardener.html">Hire Gardener</a></li>
+                    <li><a href="./fertilizer.html">Fertilizer</a></li>
+                    <li><a href="./accessories.html">Accessories</a></li>
+                    <li><a href="./corporate.html">Corporate</a></li>
+                    <li><a href="./identity.html">Our Identity</a></li>
+                    <li><a href="./reachout.html">Reach Out</a></li>
                 </ul>
             </div>
             <div class="footerContent">
