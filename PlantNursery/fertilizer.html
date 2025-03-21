@@ -156,7 +156,47 @@
 
 <!-- Prduct Section -->
  
-    <div class="product-container">
+<div class="product-list" id="productList"></div>
+    
+<div id="buyNowModal" class="modalOverlay">
+    <div class="modal-content" id="buyNowContent">
+        <!-- <div class="product-description-header"> -->
+            <!-- <h2>Product Description</h2> -->
+            <!-- <button onclick="closeModal('buyNowModal')">X</button> -->
+        </div>
+        <!-- <div class="productDescription" id="buyNowContent"></div> -->
+    </div>
+
+
+<div id="cartModal" class="modalOverlay">
+    <div class="modal-content" id="cartContent"></div>
+</div>
+<div id="checkoutModal" class="modalOverlay">
+    <div class="modal-content">
+        <h2>Payment Options</h2>
+        <p><input type="radio" name="payment" checked> UPI</p>
+        <p><input type="radio" name="payment"> Wallet</p>
+        <p><input type="radio" name="payment"> Debit/Credit Card</p>
+        <p><input type="radio" name="payment"> Net Banking</p>
+        <p><input type="radio" name="payment"> Cash on Delivery</p>
+        <p><strong>Total Amount to Pay:</strong> ₹<span id="checkoutTotal">0</span></p>
+        <button onclick="placeOrder()">Place Order</button>
+        <button onclick="closeModal('checkoutModal')">Cancel</button>
+    </div>
+</div>
+
+<div id="orderSuccessModal" class="modalOverlay">
+    <div class="modal-content success">
+        <h2>Thank You!</h2>
+        <p>Your order has been placed successfully.</p>
+        <button onclick="closeAllModals()">Close</button>
+    </div>
+</div>
+
+
+
+
+    <!-- <div class="product-container">
         <div class="product">
             <div class="image-wrapper">
                 <img src="./assets/images/soil1.jpg" alt="Product 1">
@@ -264,7 +304,7 @@
 
 
 
-    </div>
+    </div> -->
 
     <!-- Footer Section -->
 
@@ -273,13 +313,13 @@
             <div class="footerContent">
                 <h3>QUICK LINKS</h3>
                 <ul>
-                    <li>Gardening</li>
-                    <li>Hire Gardener</li>
-                    <li>Fertilizer</li>
-                    <li>Accessories</li>
-                    <li>Corporate</li>
-                    <li>Our Identity</li>
-                    <li>Reach Out</li>
+                    <li><a href="./index.html">Gardening</a></li>
+                    <li><a href="./gardener.html">Hire Gardener</a></li>
+                    <li><a href="./fertilizer.html">Fertilizer</a></li>
+                    <li><a href="./accessories.html">Accessories</a></li>
+                    <li><a href="./corporate.html">Corporate</a></li>
+                    <li><a href="./identity.html">Our Identity</a></li>
+                    <li><a href="./reachout.html">Reach Out</a></li>
                 </ul>
             </div>
             <div class="footerContent">
@@ -325,6 +365,7 @@
 
     <script src="./assets/js/toggle.js"></script>
     <script src="./assets/js/login.js"></script>
+    <script src="./assets/js/fertilizer.js"></script>
 </body>
 
 </html>
