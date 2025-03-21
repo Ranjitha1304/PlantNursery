@@ -1,13 +1,13 @@
 const products = [
     { id: 1, name: "Indoor Snake Plant", originalPrice: 399, price: 349, img: "./assets/images/indoor1.jpg", description: "A Flower pot, Planterette, or Plant Pot, is a container in which flowers and other plants are cultivated and displayed." },
-    { id: 2, name: "Lucky Money Plant", originalPrice: 799, price: 649, img: "/images/indoor2.jpg", description: "A Flower pot, Planterette, or Plant Pot, is a container in which flowers and other plants are cultivated and displayed." },
-    { id: 3, name: "Pink Syngonium Plant", originalPrice: 399, price: 349, img: "../assets/images/indoor3.jpg", description: "A Flower pot, Planterette, or Plant Pot, is a container in which flowers and other plants are cultivated and displayed." },
-    { id: 4, name: "Rubber Plant", originalPrice: 399, price: 249, img: "../images/indoor4.jpg", description: "A Flower pot, Planterette, or Plant Pot, is a container in which flowers and other plants are cultivated and displayed." },
-    { id: 5, name: "Birkin Plant", originalPrice: 299, price: 249, img: "/assets/images/indoor5.jpg", description: "A Flower pot, Planterette, or Plant Pot, is a container in which flowers and other plants are cultivated and displayed." },
-    { id: 6, name: "Schefferola Plant", originalPrice: 399, price: 349, img: "/assets/images/indoor6.jpg", description: "A Flower pot, Planterette, or Plant Pot, is a container in which flowers and other plants are cultivated and displayed." },
-    { id: 7, name: "Aglaonema Green Plant", originalPrice: 199, price: 79, img: "/assets/images/indoor7.jpg", description: "A Flower pot, Planterette, or Plant Pot, is a container in which flowers and other plants are cultivated and displayed." },
-    { id: 8, name: "Jade Succulent Plant", originalPrice: 399, price: 249, img: "/assets/images/indoor8.jpg", description: "A Flower pot, Planterette, or Plant Pot, is a container in which flowers and other plants are cultivated and displayed." },
-    { id: 9, name: "Optunla Cactus Plant", originalPrice: 399, price: 249, img: "/assets/images/indoor9.jpg", description: "A Flower pot, Planterette, or Plant Pot, is a container in which flowers and other plants are cultivated and displayed." }
+    { id: 2, name: "Lucky Money Plant", originalPrice: 799, price: 649, img: "./assets/images/indoor2.jpg", description: "A Flower pot, Planterette, or Plant Pot, is a container in which flowers and other plants are cultivated and displayed." },
+    { id: 3, name: "Pink Syngonium Plant", originalPrice: 399, price: 349, img: "./assets/images/indoor3.jpg", description: "A Flower pot, Planterette, or Plant Pot, is a container in which flowers and other plants are cultivated and displayed." },
+    { id: 4, name: "Rubber Plant", originalPrice: 399, price: 249, img: "./assets/images/indoor4.jpg", description: "A Flower pot, Planterette, or Plant Pot, is a container in which flowers and other plants are cultivated and displayed." },
+    { id: 5, name: "Birkin Plant", originalPrice: 299, price: 249, img: "./assets/images/indoor5.jpg", description: "A Flower pot, Planterette, or Plant Pot, is a container in which flowers and other plants are cultivated and displayed." },
+    { id: 6, name: "Schefferola Plant", originalPrice: 399, price: 349, img: "./assets/images/indoor6.jpg", description: "A Flower pot, Planterette, or Plant Pot, is a container in which flowers and other plants are cultivated and displayed." },
+    { id: 7, name: "Aglaonema Green Plant", originalPrice: 199, price: 79, img: "./assets/images/indoor7.jpg", description: "A Flower pot, Planterette, or Plant Pot, is a container in which flowers and other plants are cultivated and displayed." },
+    { id: 8, name: "Jade Succulent Plant", originalPrice: 399, price: 249, img: "./assets/images/indoor8.jpg", description: "A Flower pot, Planterette, or Plant Pot, is a container in which flowers and other plants are cultivated and displayed." },
+    { id: 9, name: "Optunla Cactus Plant", originalPrice: 399, price: 249, img: "./assets/images/indoor9.jpg", description: "A Flower pot, Planterette, or Plant Pot, is a container in which flowers and other plants are cultivated and displayed." }
 
 ];
 
