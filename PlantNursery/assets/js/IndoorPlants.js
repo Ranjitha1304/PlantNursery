@@ -1,5 +1,5 @@
 const products = [
-    { id: 1, name: "Indoor Snake Plant", originalPrice: 399, price: 349, img: "/assets/images/indoor1.jpg", description: "A Flower pot, Planterette, or Plant Pot, is a container in which flowers and other plants are cultivated and displayed." },
+    { id: 1, name: "Indoor Snake Plant", originalPrice: 399, price: 349, img: "./assets/images/indoor1.jpg", description: "A Flower pot, Planterette, or Plant Pot, is a container in which flowers and other plants are cultivated and displayed." },
     { id: 2, name: "Lucky Money Plant", originalPrice: 799, price: 649, img: "/assets/images/indoor2.jpg", description: "A Flower pot, Planterette, or Plant Pot, is a container in which flowers and other plants are cultivated and displayed." },
     { id: 3, name: "Pink Syngonium Plant", originalPrice: 399, price: 349, img: "/assets/images/indoor3.jpg", description: "A Flower pot, Planterette, or Plant Pot, is a container in which flowers and other plants are cultivated and displayed." },
     { id: 4, name: "Rubber Plant", originalPrice: 399, price: 249, img: "/assets/images/indoor4.jpg", description: "A Flower pot, Planterette, or Plant Pot, is a container in which flowers and other plants are cultivated and displayed." },
