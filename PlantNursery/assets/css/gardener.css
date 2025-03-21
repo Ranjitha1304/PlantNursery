@@ -370,60 +370,187 @@ footer{
  font-size: 22px;
  }
 
+ .footerContent a{
+   text-decoration: none;
+   color: white;
+ }
+
  .locateContent p{
     margin:0; /* To remove default margin */
     font-size: 20px;
  
  }
 
- /* Appointment Modal (Separate from Login Modal) */
+
+
+/* Booking Section */
+.bookingContainer {
+   /* display: flex; */
+   /* flex-wrap: wrap; */
+   /* gap: 20px;
+   justify-content: center; */
+   width:90%;
+   margin:auto;
+   border-bottom: 1px solid black;
+
+   
+}
+.booking {
+   display: flex;
+   border-top: 1px solid black;
+   padding: 35px 0;
+   justify-content:space-between;
+   align-items: center;
+
+   /* border: 1px solid #ddd;
+   padding: 15px;
+   border-radius: 10px;
+   text-align: center;
+   width: 250px;
+   background: #fff;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+}
+.booking .image img {
+   width: 100%;
+   border-radius: 10px;
+   
+}
+.booking .details h2 {
+   font-size: 36px;
+   margin: 10px 0;
+}
+.booking .rate h2 {
+   font-size: 30px;
+   /* color: #2E7D32; */
+}
+.bookingBtn button {
+   background: #2E7D32;
+   color: white;
+   border: none;
+   padding: 20px;
+   /* width: 100%; */
+   border-radius: 20px;
+   cursor: pointer;
+}
+
+/* Modals */
 .appointment-modal {
-    display: none; /* Initially hidden */
+   display: none;
+   position: fixed;
+   z-index: 1001;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.appointment-modal-content {
+   background: white;
+   padding: 20px;
+   width: 400px;
+   border-radius: 10px;
+   text-align: center;
+   position: relative;
+}
+.close-appointment-modal {
+   position: absolute;
+   top: 10px;
+   right: 15px;
+   font-size: 24px;
+   cursor: pointer;
+}
+
+/* Summary Box */
+.summary-box, #serviceList, #selectedServices {
+   border: 1px solid black;
+   padding: 10px;
+   margin: 10px 0;
+   background: #f9f9f9;
+}
+
+/* Add Service Button */
+#addServiceBtn, #cancelService, #continueService {
+   background-color: #2E7D32;
+   color: white;
+   padding: 10px;
+   width: 100%;
+   border: none;
+   border-radius: 5px;
+   font-size: 16px;
+   cursor: pointer;
+   margin-top: 10px;
+}
+#cancelService {
+   background: #888;
+}
+
+/* Schedule Appointment Button */
+.schedule-btn {
+   background-color: #2E7D32;
+   color: white;
+   padding: 15px;
+   width: 100%;
+   border: none;
+   border-radius: 5px;
+   font-size: 18px;
+   cursor: pointer;
+}
+
+
+
+
+
+ /* Appointment Modal (Separate from Login Modal) */
+/* .appointment-modal {
+    display: none; 
     position: fixed;
-    z-index: 1001; /* Higher than the login modal */
+    z-index: 1001; 
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Dim background */
+    background-color: rgba(0, 0, 0, 0.5); 
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 /* Appointment Modal Content */
-.appointment-modal-content {
+/* .appointment-modal-content {
     background: white;
     padding: 20px;
-    width: 400px;
+    width: 400px; */
     /* height: 600px; */
-    border-radius: 10px;
+    /* border-radius: 10px;
     text-align: center;
     position: relative;
-}
+} */
 
 /* Close Button */
-.close-appointment-modal {
+/* .close-appointment-modal {
     position: absolute;
     top: 10px;
     right: 15px;
     font-size: 24px;
     cursor: pointer;
-}
+} */
 
 /* Summary Box */
-.summary-box {
+/* .summary-box {
     border: 1px solid black;
     padding: 10px;
     margin: 10px 0;
-}
+} */
 /* .summary-box p, .add-service-text p,.add-service-box{
     font-size: 30px;
     font-weight: bolder;
 } */
 
 /* Add Service Box */
-.add-service-box {
+/* .add-service-box {
     border: 2px solid #2E7D32;
     color: #2E7D32;
     padding: 10px;
@@ -431,10 +558,10 @@ footer{
     cursor: pointer;
     font-weight: bold;
     margin-bottom: 20px;
-}
+} */
 
 /* Schedule Appointment Button */
-.schedule-btn {
+/* .schedule-btn {
     background-color: #2E7D32;
     color: white;
     padding: 15px;
@@ -443,7 +570,7 @@ footer{
     border-radius: 5px;
     font-size: 18px;
     cursor: pointer;
-}
+} */
 
 
 /* Media Queries */
