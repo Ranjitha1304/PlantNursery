@@ -302,13 +302,65 @@ margin-top: 50px;
     padding:10px;
     padding-bottom: 40px;
     border-radius: 40px;
-    flex: 0 0 auto; 
+    /* flex: 0 0 auto;  */
+
 }
 .uploadImages h3{
     font-weight:400;
-    font-size: 30px;
+    font-size: 26px;
     margin:0;
 }
+
+
+.uploadImages {
+   text-align: center; /* Center content */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.file {
+   display: none; /* Hide default file input */
+}
+
+/* Custom button styling */
+.customFileUpload {
+   display: inline-block;
+   background-color: #2E7D32; /* Green color */
+   color: white;
+   padding: 12px 24px;
+   font-size: 16px;
+   font-weight: bold;
+   border-radius: 5px;
+   cursor: pointer;
+   text-align: center;
+   margin-top: 10px;
+   transition: 0.3s ease-in-out;
+}
+
+.customFileUpload:hover {
+   background-color: #245a27; /* Darker green on hover */
+}
+
+.error {
+   color: red;
+   font-size: 14px;
+   margin-top: 5px;
+}
+
+#previewImage {
+   width: 120px;
+   height: 120px;
+   object-fit: cover;
+   display: block;
+   margin-top: 10px;
+}
+
+
+
+
+
+
 
 .uploadContent {
     padding:50px;
@@ -376,6 +428,11 @@ margin-top: 50px;
     margin:0; /* To remove default margin */
     font-size: 20px;
  
+ }
+
+ .footerContent a{
+   text-decoration: none;
+   color: white;
  }
 
  /* Media Queries */
