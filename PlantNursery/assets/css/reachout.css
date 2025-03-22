@@ -306,6 +306,11 @@
    padding:20px;
 
 }
+
+.video a{
+   text-decoration: none;
+   color:green;
+}
 .contentHeader{
    background-color: #276b2a;
    padding:30px;
@@ -421,6 +426,12 @@ font-weight: bolder;
    cursor: pointer;
 }
 
+.error {
+   color: red;
+   font-size: 14px;
+   display: block;
+   margin-top: 2px;
+}
 
 .locateContent{
    margin-bottom: 10px;
@@ -440,28 +451,48 @@ font-size: 22px;
    margin-top: 50px;
 }
 
+
 /* Footer Styling */
 footer{
-    display:flex; /* Flex layout to arrange in row */
-    justify-content: space-around;
-    padding:20px 50px;
-    background-color: #2E7D32;
-    color:#FFFFFF;
-margin-top: 50px;
- }
- 
+   display:flex; /* Flex layout to arrange in row */
+   justify-content: space-around;
+   padding:20px 50px;
+   background-color: #2E7D32;
+   color:#FFFFFF;
+   margin-top: 50px;
+}
 
- /* Footer List Items */
- footer li{
-    list-style: none;
-    font-size: 20px;
+
+/* Footer List Items */
+footer li{
+   list-style: none;
+   font-size: 20px;
+}
+
+/* To remove default padding from footer ul */
+footer ul{
+   padding:0px;
+}
+
+.locateContent{
+   margin-bottom: 10px;
+}
+
+.footerContent h3{
+font-size: 22px;
+}
+
+.locateContent p{
+   margin:0; /* To remove default margin */
+   font-size: 20px;
+
+}
+
+.footerContent a{
+   text-decoration: none;
+   color: white;
  }
- 
- /* To remove default padding from footer ul */
- footer ul{
-    padding:0px;
- }
- 
+
 
 /* Media Queries */
 
