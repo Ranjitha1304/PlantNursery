@@ -168,10 +168,24 @@
     <section class="healthContainer">
         <h1>LIVE PLANT HEALTH CHECK & DIAGNOSIS</h1>
         <div class="healthWrapper">
-            <div class="uploadImages">
+            <!-- <div class="uploadImages">
                 <img src="./assets/images/upload.png">
+                <input type="file" class="file">
                 <h3>Upload Images</h3>
                 <h3>(Jpg,Png,Jpng,Jpeg only)</h3>
+            </div> -->
+            <div class="uploadImages">
+                <img src="./assets/images/upload.png" id="previewImage">
+                
+                <!-- Custom File Upload Button -->
+                <label for="imageUpload" class="customFileUpload">Choose File</label>
+                
+                <!-- Hidden File Input -->
+                <input type="file" class="file" accept=".jpg, .jpeg, .png" id="imageUpload">
+            
+                <h3>Upload Images</h3>
+                <h3>(Jpg, Png, Jpeg only)</h3>
+                <small class="error fileError"></small>
             </div>
             <div class="uploadContent">
                 <h3>Users can upload images of sick plants for expert advice on treatment</h3>
@@ -230,13 +244,13 @@
             <div class="footerContent">
                 <h3>QUICK LINKS</h3>
                 <ul>
-                    <li>Gardening</li>
-                    <li>Hire Gardener</li>
-                    <li>Fertilizer</li>
-                    <li>Accessories</li>
-                    <li>Corporate</li>
-                    <li>Our Identity</li>
-                    <li>Reach Out</li>
+                    <li><a href="./index.html">Gardening</a></li>
+                    <li><a href="./gardener.html">Hire Gardener</a></li>
+                    <li><a href="./fertilizer.html">Fertilizer</a></li>
+                    <li><a href="./accessories.html">Accessories</a></li>
+                    <li><a href="./corporate.html">Corporate</a></li>
+                    <li><a href="./identity.html">Our Identity</a></li>
+                    <li><a href="./reachout.html">Reach Out</a></li>
                 </ul>
             </div>
             <div class="footerContent">
