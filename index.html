@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Nursery</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+
+    <header>
+        <section class="header_container">
+            <div class="logo">
+                <img src="./assets/images/logo.png" alt="Plant Nursery Logo">
+            </div>
+            <div class="free_shipping">
+                <h3>FREE SHIPPING ON ALL ORDERS ABOVE Rs.499/-</h3>
+                <h3>HIRE-A-GARDENER FROM Rs.549/-</h3>
+            </div>
+            <div class="login">
+                <i class='bx bxs-user-circle'></i>
+                <h3>
+                    <a href="#"> Login/Register</a>
+                </h3>
+            </div>
+            <div class="search">
+                <i class='bx bx-search'></i>
+                <input type="text" id="search-input" placeholder="Search" class="search-input">
+                <div id="no-results" style="display: none; color: red; margin-top: 10px;">No products found</div>
+            </div>
+        </section>
+    </header>
+
+    <!-- Navigation Bar -->
+
+    <nav class="menu">
+        <div class="menu-toggle" onclick="toggleMenu()">☰ MENU</div>
+        <div class="menu-links">
+            <a href="./index.html">Gardening</a>
+            <a href="./gardener.html">Hire Gardener</a>
+            <a href="./fertilizer.html">Fertilizer</a>
+            <a href="./accessories.html">Accessories</a>
+            <a href="./corporate.html">Corporate</a>
+            <a href="./identity.html">Our Identity</a>
+            <a href="./reachout.html">Reach Out</a>
+        </div>
+    </nav>
+
+    <!-- Login / Registration Modal -->
+
+    <section class="modal" id="loginModal">
+        <div class="modal_content">
+            <span class="close">&times;</span>
+            <h2>Login / Register</h2>
+            <form id="loginForm">
+                <div class="input_container">
+                    <i class='bx bxs-user'></i>
+                    <input type="text" id="name" placeholder="Name" required>
+                    <small class="error-message"></small>
+                </div>
+                <div class="input_container">
+                    <i class='bx bxs-phone'></i>
+                    <input type="tel" id="mobile" placeholder="Mobile" required>
+                    <small class="error-message"></small>
+                </div>
+                <div class="input_container">
+                    <i class='bx bxs-envelope'></i>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <small class="error-message"></small>
+                </div>
+                <div class="input_container">
+                    <i class='bx bxs-lock-alt'></i>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <small class="error-message"></small>
+                </div>
+                <button type="submit" class="btn">Login/Register</button>
+                <p>OR</p>
+                <a
+                    href="https://accounts.google.com/signin/v2/usernamerecovery?ddm=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+                    <h3><img src="./assets/images/google.png" style="height: 30px; width:30px;">Sign Up with Google</h3>
+                </a>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Carousel Section -->
+    <section class="bannerCarousel">
+        <div class="carousel">
+            <div class="carousel-inner">
+                <img src="./assets/images/carous1.jpg" class="carousel-item" alt="Banner 1">
+                <img src="./assets/images/carous2.jpg" class="carousel-item" alt="Banner 2">
+                <img src="./assets/images/carous3.jpg" class="carousel-item" alt="Banner 3">
+            </div>
+        </div>
+    </section>
+
+    <!-- Plants Section -->
+    <section class="plants">
+        <h2>PLANTS</h2>
+        <div class="plantContainer">
+            <div class="plant_wrapper" data-name="indoor plants">
+                <div class="plant_item">
+                    <img src="./assets/images/INDOOR PLANTS.jpg" alt="Indoor Plants">
+                </div>
+                <h1><a href="./indoorPlants.html">Indoor Plants</a></h1>
+            </div>
+            <div class="plant_wrapper" data-name="outdoor plants">
+                <div class="plant_item">
+                    <img src="./assets/images/outdoor.jpg" alt="Outdoor Plants">
+                </div>
+                <h1><a href="./outdoorPlants.html">Outdoor Plants</a></h1>
+            </div>
+            <div class="plant_wrapper" data-name="air purifier plants">
+                <div class="plant_item">
+                    <img src="./assets/images/airpurifier.jpg" alt="Air Purifier Plants">
+                </div>
+                <h1><a href="./airpurifierPlants.html">Air Purifier Plants</a></h1>
+            </div>
+            <div class="plant_wrapper" data-name="hanging plants">
+                <div class="plant_item">
+                    <img src="./assets/images/hangingrose.jpg" alt="Hanging Plants">
+                </div>
+                <h1><a href="./hangingPlants.html">Hanging Plants</a></h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pots Section -->
+
+    <section class="potsContainer">
+        <h2>POTS</h2>
+
+        <div class="potsTypes" data-name="pots">
+            <div class="potsItem">
+                <h1>BASIC POTS</h1>
+                <a href="./pots.html"><img src="./assets/images/basicpots.jpg" alt="Basic Pots"></a>
+            </div>
+            <div class="potsItem">
+                <h1>CERAMIC POTS</h1>
+                <a href="./pots.html"><img src="./assets/images/ceramicpots.jpg" alt="Ceramic Pots"></a>
+            </div>
+            <div class="potsItem">
+                <h1>DESIGNER POTS</h1>
+                <a href="./pots.html"><img src="./assets/images/designerpots.jpg" alt="Designer Pots"></a>
+            </div>
+            <div class="potsItem">
+                <h1>METAL POTS</h1>
+                <a href="./pots.html"><img src="./assets/images/metalpots.jpg" alt="Metal Pots"></a>
+            </div>
+            <div class="potsItem">
+                <h1>POT STAND</h1>
+                <a href="./pots.html"><img src="./assets/images/potstand.jpg" alt="Pot stand"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seeds Section -->
+
+    <section class="seeds" data-name="seeds">
+        <h2>SEEDS</h2>
+        <div class="seedContainer">
+            <div class="seedItem">
+                <img src="./assets/images/trendingseeds.avif" alt="Trending Seeds">
+                <h3>TRENDING <span>SEEDS</span></h3>
+            </div>
+            <div class="seedItem">
+                <img src="./assets/images/vegetableseeds.jpg" alt="Vegetable Seeds">
+                <h3>VEGETABLE <span>SEEDS</span></h3>
+            </div>
+            <div class="seedItem">
+                <img src="./assets/images/flowerseeds.jpg" alt="Flower Seeds">
+                <h3>FLOWER <span>SEEDS</span></h3>
+            </div>
+            <div class="seedItem">
+                <img src="./assets/images/treeseeds.jpg" alt="Tree Seeds">
+                <h3>TREE <span>SEEDS</span></h3>
+            </div>
+            <div class="seedItem">
+                <img src="./assets/images/rainysowingseed.avif" alt="Rainy Sowing Seeds">
+                <h3>RAINY SOWING <span>SEEDS</span></h3>
+            </div>
+            <div class="seedItem">
+                <img src="./assets/images/organicseed.jpg" alt="Organic Seeds">
+                <h3>ORGANIC <span>SEEDS</span></h3>
+            </div>
+            <div class="seedItem">
+                <img src="./assets/images/fruitseeds.jpg" alt="Fruit Seeds">
+                <h3>FRUIT <span>SEEDS</span></h3>
+            </div>
+            <div class="seedItem">
+                <img src="./assets/images/otherseeds.jpg" alt="Other Seeds">
+                <h3>OTHER <span>SEEDS</span></h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+
+    <section class="blogs" data-name="blogs">
+        <h2>BLOGS</h2>
+        <div class="blogItem">
+            <img src="./assets/images/blog1.jpg" alt="blog1">
+            <div class="blogContent">
+                <p>Gardening destresses and rejuvenates the mind to a great extent. Even physician advice patients those
+                    who struggle from high BP and sugar to take up gradening as a hobby. You can make your open space
+                    livelier and environmentally friendly whrn you plant plenty of plants and trees inside the garden.
+                </p>
+                <p>Listed below are some of the indoor plants that can bring luck to your home:</p>
+                <ul>
+                    <li>Money Plant</li>
+                    <li>Jade and Snake Plant</li>
+                    <li>Basil and Lucky Bamboo</li>
+                    <li>Palms and pot orchids</li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="blogItem">
+            <img src="./assets/images/blog2.jpg" alt="blog2">
+            <div class="blogContent">
+                <p> Plants and trees play a vital role in safeguarding our planet from destruction. It is now your turn
+                    to plant plenty of colorful trees in your garden and protect our earth from catastrophes. Plants and
+                    trees produce oxygen round the clock and support our ecological system in plenty of ways.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+
+    <section class="footer">
+        <footer>
+            <div class="footerContent">
+                <h3>QUICK LINKS</h3>
+                <ul>
+                    <li><a href="./index.html">Gardening</a></li>
+                    <li><a href="./gardener.html">Hire Gardener</a></li>
+                    <li><a href="./fertilizer.html">Fertilizer</a></li>
+                    <li><a href="./accessories.html">Accessories</a></li>
+                    <li><a href="./corporate.html">Corporate</a></li>
+                    <li><a href="./identity.html">Our Identity</a></li>
+                    <li><a href="./reachout.html">Reach Out</a></li>
+                </ul>
+            </div>
+            <div class="footerContent">
+                <h3>POLICY</h3>
+                <ul>
+                    <li>Terms and Coditions</li>
+                    <li>About Us</li>
+                    <li>Return Policy</li>
+                    <li>Shipping & Returns</li>
+                    <li>Store Policy</li>
+                    <li>Payment Methods</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+            <div class="footerContent">
+                <h3>LOCATE US</h3>
+                <div class="locateContent">
+                    <p><img src="./assets/images/location.png">
+                        No.11/21, XYZ street,</p>
+                    <p style="padding-left: 30px;">ABC Nagar, AHJSJ</p>
+                    <p style="padding-left: 30px;">Chennai- 6000XX</p>
+                </div>
+                <div class="locateContent">
+                    <p><img src="./assets/images/ph.png">
+                        +91 9123456789</p>
+                </div>
+                <div class="locateContent">
+                    <p><img src="./assets/images/email-circle.png">
+                        blosoomplantstore@gmail.com</p>
+                </div>
+            </div>
+            <div class="footerContent">
+                <h3>WE ARE SOCIAL</h3>
+                <ul>
+                    <li><a href="https://wa.me/9012783466" target="_blank">Whatsapp</a></li>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/">Facebook</a></li>
+                    <li><a href="https://www.youtube.com/">YouTube</a></li>
+                    <li><a href="https://x.com/?lang=en-in">Twitter</a></li>
+                </ul>
+            </div>
+        </footer>
+
+    </section>
+
+    <!-- External JavaScript Files -->
+
+    <script src="./assets/js/toggle.js"></script>
+    <script src="./assets/js/login.js"></script>
+    <script src="./assets/js/carousel.js"></script>
+    <script src="./assets/js/indexSearch.js"></script>
+    <script src="./assets/js/cartCount.js"></script>
+</body>
+
+</html>

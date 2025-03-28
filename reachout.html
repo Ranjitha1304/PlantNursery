@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Nursery</title>
+    <link rel="stylesheet" href="./assets/css/reachout.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+
+    <header>
+        <section class="header_container">
+            <div class="logo">
+                <img src="./assets/images/logo.png" alt="Plant Nursery Logo">
+            </div>
+            <div class="free_shipping">
+                <h3>FREE SHIPPING ON ALL ORDERS ABOVE Rs.499/-</h3>
+                <h3>HIRE-A-GARDENER FROM Rs.549/-</h3>
+            </div>
+            <div class="login">
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAddJREFUWEfdmAEyRDEMhrMnwUlwEpwEJ7FOgpPgJPhMa16zbfp3X403MrOD0eZ9Tf6kebuzjdluYzz2b4BOzezazM7NjN/5vKVo8/PFzJ7TZygJoxG6M7PbgScA9/i1nn2SqUAXZvaQIiE5dosAu1EipgCRGmDWmhStHhAgAM20+yiFEdCsyNQO04RqAaGZp5lhUTXVAgIGKMWyNk6S6Ef2nfkH1IDUVLUqZ6Qiqbz9EqoG9CqW92VQxmrKOVQRJQ+kRocuDFBkatqLg3kgtcwJM+GOTO3qRcV5IPVUYS9JlOrhimh7IFU/SspUX4WOPNCHUudpzQxR42oaUOtuUiusWu3HamjpDDBS+J7mI7UxZh9hhFRRD2S2uzQUtVqqPkLLv5keR6xoIT5lOKM6ekbZ4yiPrX59HnGV6ZJO/eOndnVEaWMj1dUCqYHhL4pawTByuR7cO70wpv8D04KSLlcc0GV9tSA+HKjRybwtf9UDjg5o0ly8iFzUk6qN9dgRFlG33ruyXpgcWqI+SFU+RG/IV9rAaGMMJ4UeEOAKlKjvbw0WE6LfqACxJ6oUBWbqi+KyWtDFlTji5pv8V16lW52YLxswqulPvmxQ0rNqjaqhVQ8Z2bw5oE9sbHIlqeUz0gAAAABJRU5ErkJggg==" />
+                <h3>
+                    <a href="#"> Login/Register</a>
+                </h3>
+            </div>
+            <div class="search">
+                <i class='bx bx-search'></i>
+                <input type="text" placeholder="Search" class="search-input">
+            </div>
+
+        </section>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="menu">
+        <div class="menu-toggle" onclick="toggleMenu()">☰ MENU</div>
+        <div class="menu-links">
+            <a href="./index.html">Gardening</a>
+            <a href="./gardener.html">Hire Gardener</a>
+            <a href="./fertilizer.html">Fertilizer</a>
+            <a href="./accessories.html">Accessories</a>
+            <a href="./corporate.html">Corporate</a>
+            <a href="./identity.html">Our Identity</a>
+            <a href="./reachout.html">Reach Out</a>
+        </div>
+    </nav>
+
+    <!-- Login / Registration Modal -->
+
+    <section class="modal" id="loginModal">
+        <div class="modal_content">
+            <span class="close">&times;</span>
+            <h2>Login / Register</h2>
+            <form id="loginForm">
+                <div class="input_container">
+                    <i class='bx bxs-user'></i>
+                    <input type="text" id="name" placeholder="Name" required>
+                    <small class="error-message"></small>
+                </div>
+                <div class="input_container">
+                    <i class='bx bxs-phone'></i>
+                    <input type="tel" id="mobile" placeholder="Mobile" required>
+                    <small class="error-message"></small>
+                </div>
+                <div class="input_container">
+                    <i class='bx bxs-envelope'></i>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <small class="error-message"></small>
+                </div>
+                <div class="input_container">
+                    <i class='bx bxs-lock-alt'></i>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <small class="error-message"></small>
+                </div>
+                <button type="submit" class="btn">Login/Register</button>
+                <p>OR</p>
+                <a href="https://accounts.google.com/signin/v2/usernamerecovery?ddm=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><h3><img src="./assets/images/google.png" style="height: 30px; width:30px;">Sign Up with Google</h3></a>
+            </form>
+        </div>
+    </section>
+
+
+<!-- Appointment Section -->
+<section class="appointment">
+    <div class="appointmentContainer">
+        <button class="session">Live Q&A Sessions</button>
+        <button class="remainder">Remainders</button>
+    </div>
+</section>
+
+<!-- Modal Section -->
+<section class="qnAnsModal" id="qaModal">
+    <div class="qaContent">
+        <div class="contentHeader">
+            <h3>Live Q&A Sessions</h3>
+            <span class="qaClose">&times;</span>
+        </div>
+        <div class="chatMode">
+            <div class="video">
+                <a href="https://wa.me/9012783466" target="_blank">
+                    <img src="./assets/images/videoimg.jpg" alt="Live Video Chat">
+                    <h2>LIVE VIDEO CHAT</h2>
+                </a>
+            </div>
+            <div class="video">
+                <a href="https://wa.me/9012783466" target="_blank">
+                    <img src="./assets/images/message.jpg" alt="Live Chat">
+                    <h2>LIVE CHAT</h2>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal Section -->
+
+    <section class="RemainderModal" id="rmModal">
+        <div class="rmContent">
+            <span class="rmClose">&times;</span>
+
+            <h1>REMAINDER</h1>
+            <h3>We will give you Gentle Remainder for Your Plant Care</h3>
+            <button>Weekly</button>
+            <button>Daily</button>
+
+        </div>
+    </section>
+
+<!-- Contact Section -->
+
+    <section class="contact">
+        <div class="contactContainer">
+            <div class="reachOut">
+                <h3>REACH OUT TO US</h3>
+                <h4>Leave us a message and we will get back to you as soon as possible. We'd love to hear from you.</h4>                      
+                <div class="reachOutContainer">
+                    <form class="feedback-form">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <small class="error nameError"></small>
+                
+                        <input type="text" name="contact" placeholder="Contact" required>
+                        <small class="error contactError"></small>
+                
+                        <input type="email" name="email" placeholder="Mail ID" required>
+                        <small class="error emailError"></small>
+                
+                        <textarea name="customization" placeholder="Type Your Customization" rows="7"></textarea>
+                        <small class="error customizationError"></small>
+                
+                        <button type="submit" class="btn">SUBMIT</button>
+                    </form>
+                </div>
+                           
+            </div>
+            <div class="locate">
+                <h1>LOCATE US</h1>
+
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAW5JREFUSEu1lclVA0EMRMuZ4EiASDCRAJGAI4FMgEhgPk/Fa0+rt4Pn0qtUVVp6Drryd7iyf80A3Eg6SbqVdLfNv7bxQ9K3pLdYN3mOAJ4lPXVUAnbezrmXfj2A92CM4UuwhjmKUMJocPbvM4QWACF5DfmP4TyzBwQijJColGQAXP4Mb7Aya9gC7BzgkDlqAGFekckAHHcSiEEJWKrAIQQYUQt4pSID8GWcA+I1StjjYw/mjr1VVLnIAAgPrI/BzmuHCwCrgj339ut/pRnAT5z2AMyYq/ZhuwufGYDL04y9Rr4T6xA5T666qRDZoRO2kmQDdkNUlh1hcsxh+RDrMuFsZXn6u9rqA4cgbZ5dx7msnfCL45lOdq23OnnflFMAXHIuUmbhpSyApbfIcfc7UyVvksDwf1BWUJkPdzdEygaswjj6H5Rdyxwlfq6HzltVNEom5+nLmRnOKLAdzAkNY+8fMV1FGaHlvRUFy84x+AVDqGsZ00xfBAAAAABJRU5ErkJggg==" />
+                <h3>Address</h3>
+                <p>No.11/21, XYZ Street</p>
+                <p>ABC NAGAR, AHJSJ</p>
+                <p>Chennai-6000XX</p>
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAQVJREFUSEvVlIENgkAMRT+b6CTqJOok6iS6iTqJbqK+hCbH2TughBgvMSQI/9Hf/jaa+TQz6+tngLOkhaS9pOeUKr0KrpLWrehF0mkKJAek4vbhAACFKskBr4IdQI4Rq3LAo/Xe0wpBxgBukjZjq8gBTM/OEcH/5Vhxns8BiANJT1jcA3Av7wNfHpqgEiC3KdRcs8ALGgkmD1zteFXw/+HT+HubE7dFpV3EzPOyHSxigswqxKnUEl8MY23Zeam23QTcxKuJ79umteB5lpCVzoLsAyBSykYpFp2hGAJAiJ5sK2skhYUACOA5EK7phKXiX+tkaAW5HUD4rVoYQHdXRQGD19L/A97j1zAZUnbfggAAAABJRU5ErkJggg==" />
+                <h3>Contact No</h3>
+                <p>+91 9123456789</p>
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAO9JREFUSEvdldENwjAMRK+bwCTAJjAJMAliEtgENoG+Kq5MpFRJmkqo/qnUOH6+q5N2Wji6hetrXYC9pJukzUzb3pJOkp7U8RY9+pdAWgSQbQz4hMoskFATqH+FjUPzXoEBKH7vFy+FBNTjgkUSYAnXAgjNnKOGkgAKWzJqDhOWYQmDYd/O700CWGAjcnn+TIXr0lvic8zqSQB1KI6SY4D47+ItYRxRaZENMAgAswwLdpEl8TAUAawrIHjtg66HwxRFFcDU2EkfT2pLQO6xqFbw/4CWl904uv4u4uAwjnNv1OR1netxUd66fplF0nOTv61sPBk08/C0AAAAAElFTkSuQmCC" />
+                <h3>Email</h3>
+                <p>blossomplantstore@gmail.com</p>
+                <h1 class="follow">FOLLOW US @</h1>
+                <div class="mediaIcons">
+                <a href="https://www.youtube.com/"><img src="./assets/images/youtube.png"></a>
+                <a href="https://wa.me/9012783466" target="_blank"><img src="./assets/images/whatsapp.png"></a>
+                <a href="https://www.instagram.com/"><img src="./assets/images/instagram.png"></a>
+                <a href="https://www.facebook.com/"><img src="./assets/images/facebook.png"></a>
+                <a href="https://x.com/?lang=en-in"><img src="./assets/images/twitter.png"></a>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+
+    <section class="footer">
+        <footer>
+            <div class="footerContent">
+                <h3>QUICK LINKS</h3>
+                <ul>
+                    <li><a href="./index.html">Gardening</a></li>
+                    <li><a href="./gardener.html">Hire Gardener</a></li>
+                    <li><a href="./fertilizer.html">Fertilizer</a></li>
+                    <li><a href="./accessories.html">Accessories</a></li>
+                    <li><a href="./corporate.html">Corporate</a></li>
+                    <li><a href="./identity.html">Our Identity</a></li>
+                    <li><a href="./reachout.html">Reach Out</a></li>
+                </ul>
+            </div>
+            <div class="footerContent">
+                <h3>POLICY</h3>
+                <ul>
+                    <li>Terms and Coditions</li>
+                    <li>About Us</li>
+                    <li>Return Policy</li>
+                    <li>Shipping & Returns</li>
+                    <li>Store Policy</li>
+                    <li>Payment Methods</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+            <div class="footerContent">
+                <h3>LOCATE US</h3>
+                <div class="locateContent">
+                    <p><img src="./assets/images/location.png">
+                    No.11/21, XYZ street,</p>
+                    <p style="padding-left: 30px;">ABC Nagar, AHJSJ</p>
+                    <p style="padding-left: 30px;">Chennai- 6000XX</p>
+                </div>
+                <div class="locateContent">
+                    <p><img src="./assets/images/ph.png">
+                    +91 9123456789</p>
+                </div>
+                <div class="locateContent">
+                    <p><img src="./assets/images/email-circle.png">
+                    blosoomplantstore@gmail.com</p>
+                </div>
+            </div>
+            <div class="footerContent">
+                <h3>WE ARE SOCIAL</h3>
+                <ul>
+                    <li><a href="https://wa.me/9012783466" target="_blank">Whatsapp</a></li>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/">Facebook</a></li>
+                    <li><a href="https://www.youtube.com/">YouTube</a></li>
+                    <li><a href="https://x.com/?lang=en-in">Twitter</a></li>
+                </ul>
+            </div>
+        </footer>
+
+    </section>
+
+
+    <script>
+        // Update cart count on all pages
+        function updateCartCount() {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            document.getElementById('cart-count').textContent = 
+                cart.reduce((sum, item) => sum + item.quantity, 0);
+        }
+        document.addEventListener('DOMContentLoaded', updateCartCount);
+        </script>
+
+
+    <!-- External JavaScript Files -->
+
+    <script src="./assets/js/toggle.js"></script>
+    <script src="./assets/js/login.js"></script>
+    <script src="./assets/js/qnAnsModal.js"></script>
+    <script src="./assets/js/remainderModal.js"></script>
+    <script src = "./assets/js/reachOutForm.js"></script>
+
+</body>
+
+</html>

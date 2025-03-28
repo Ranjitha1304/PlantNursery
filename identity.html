@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Nursery</title>
+    <link rel="stylesheet" href="./assets/css/identity.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+
+    <header>
+        <section class="header_container">
+            <div class="logo">
+                <img src="./assets/images/logo.png" alt="Plant Nursery Logo">
+            </div>
+            <div class="free_shipping">
+                <h3>FREE SHIPPING ON ALL ORDERS ABOVE Rs.499/-</h3>
+                <h3>HIRE-A-GARDENER FROM Rs.549/-</h3>
+            </div>
+            <div class="login">
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAddJREFUWEfdmAEyRDEMhrMnwUlwEpwEJ7FOgpPgJPhMa16zbfp3X403MrOD0eZ9Tf6kebuzjdluYzz2b4BOzezazM7NjN/5vKVo8/PFzJ7TZygJoxG6M7PbgScA9/i1nn2SqUAXZvaQIiE5dosAu1EipgCRGmDWmhStHhAgAM20+yiFEdCsyNQO04RqAaGZp5lhUTXVAgIGKMWyNk6S6Ef2nfkH1IDUVLUqZ6Qiqbz9EqoG9CqW92VQxmrKOVQRJQ+kRocuDFBkatqLg3kgtcwJM+GOTO3qRcV5IPVUYS9JlOrhimh7IFU/SspUX4WOPNCHUudpzQxR42oaUOtuUiusWu3HamjpDDBS+J7mI7UxZh9hhFRRD2S2uzQUtVqqPkLLv5keR6xoIT5lOKM6ekbZ4yiPrX59HnGV6ZJO/eOndnVEaWMj1dUCqYHhL4pawTByuR7cO70wpv8D04KSLlcc0GV9tSA+HKjRybwtf9UDjg5o0ly8iFzUk6qN9dgRFlG33ruyXpgcWqI+SFU+RG/IV9rAaGMMJ4UeEOAKlKjvbw0WE6LfqACxJ6oUBWbqi+KyWtDFlTji5pv8V16lW52YLxswqulPvmxQ0rNqjaqhVQ8Z2bw5oE9sbHIlqeUz0gAAAABJRU5ErkJggg==" />
+                <h3>
+                    <a href="#"> Login/Register</a>
+                </h3>
+            </div>
+            <div class="search">
+                <i class='bx bx-search'></i>
+                <input type="text" placeholder="Search" class="search-input">
+            </div>
+        </section>
+    </header>
+
+    <!-- Navigation Bar -->
+
+    <nav class="menu">
+        <div class="menu-toggle" onclick="toggleMenu()">☰ MENU</div>
+        <div class="menu-links">
+            <a href="./index.html">Gardening</a>
+            <a href="./gardener.html">Hire Gardener</a>
+            <a href="./fertilizer.html">Fertilizer</a>
+            <a href="./accessories.html">Accessories</a>
+            <a href="./corporate.html">Corporate</a>
+            <a href="./identity.html">Our Identity</a>
+            <a href="./reachout.html">Reach Out</a>
+        </div>
+    </nav>
+
+    <!-- Login / Registration Modal -->
+
+    <section class="modal" id="loginModal">
+        <div class="modal_content">
+            <span class="close">&times;</span>
+            <h2>Login / Register</h2>
+            <form id="loginForm">
+                <div class="input_container">
+                    <i class='bx bxs-user'></i>
+                    <input type="text" id="name" placeholder="Name" required>
+                    <small class="error-message"></small>
+                </div>
+                <div class="input_container">
+                    <i class='bx bxs-phone'></i>
+                    <input type="tel" id="mobile" placeholder="Mobile" required>
+                    <small class="error-message"></small>
+                </div>
+                <div class="input_container">
+                    <i class='bx bxs-envelope'></i>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <small class="error-message"></small>
+                </div>
+                <div class="input_container">
+                    <i class='bx bxs-lock-alt'></i>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <small class="error-message"></small>
+                </div>
+                <button type="submit" class="btn">Login/Register</button>
+                <p>OR</p>
+                <a href="https://accounts.google.com/signin/v2/usernamerecovery?ddm=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><h3><img src="./assets/images/google.png" style="height: 30px; width:30px;">Sign Up with Google</h3></a>
+            </form>
+        </div>
+    </section>
+
+    <!-- About Section -->
+
+    <div class="aboutShop">
+        <h2>ABOUT BLOSSOM PLANT SHOP</h2>
+        <p> Landscape', a commonly known term among us and we talk about it at times but the question is what exactly
+            landscape is and why do we need it? Do we gain any benefits from it? Well, landscape simply comprises
+            visible features of an area of land, including the physical elements of landforms, water bodies, living
+            elements, human elements, structures, and transitory elements such as lighting and weather conditions.
+            Landscape, with its characters and qualities, have the power to enhance the livability of a life and heat
+            the environment. This power is evident in our work from planning to inspire living design. Using equal
+            factors and commitments, we transform predictable urban conditions into inspired landscapes.</p>
+    </div>
+
+    <section class="motive">
+        <div class="motiveContent">
+            <div class="box"></div>
+            <img src="./assets/images/mision.png" style="width: 45px;">
+            <h2>OUR MISSION</h2>
+            <h4>BLOSSOM PLANT SHOP is dedicated to revitalizing the society through unique, sustainable and community-
+                integrated landscape design</h4>
+        </div>
+        <div class="motiveContent">
+            <div class="box"></div>
+            <img src="./assets/images/vision.png">
+            <h2>OUR VISION</h2>
+            <h4>Leading the industry and elevating the professional standards in the art and science of landscape
+                architecture.</h4>
+        </div>
+        <div class="motiveContent">
+            <div class="box"></div>
+            <img src="./assets/images/strength.png">
+            <h2>OUR STRENGTH</h2>
+            <h4>Our strength are not just limited to tools & technologies, but having a great knowledge & experience.
+            </h4>
+        </div>
+
+    </section>
+
+    <!-- Health Section -->
+
+    <section class="healthContainer">
+        <h1>LIVE PLANT HEALTH CHECK & DIAGNOSIS
+            <img src="./assets/images/Camera.png" class="health">
+            <img src="./assets/images/search.png" class="health">
+        </h1>
+        <div class="healthWrapper">
+            <div class="uploadImages">
+                <img src="./assets/images/upload.png" id="previewImage">
+                
+                <!-- Custom File Upload Button -->
+                <label for="imageUpload" class="customFileUpload">Choose File</label>
+                
+                <!-- Hidden File Input -->
+                <input type="file" class="file" accept=".jpg, .jpeg, .png" id="imageUpload">
+            
+                <h3>Upload Images</h3>
+                <h3>(Jpg, Png, Jpeg only)</h3>
+                <small class="error fileError"></small>
+            </div>
+            <div class="uploadContent">
+                <h3><img src="./assets/images/Camera.png"> Users can upload images of sick plants for expert advice on treatment</h3>
+                <h3><img src="./assets/images/Bot.png"> AI-Powered disease detection Based On Uploaded Photos</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gift Section -->
+
+    <div class="gift">
+        <h1>Personalized Gifting Options
+            <img src="./assets/images/Gift.png">
+            <img src="./assets/images/Bouquet.png">
+        </h1>
+    </div>
+
+    <section class="shopContainer">
+        <div class="flowerimage">
+            <img src="./assets/images/flower-img.png">
+        </div>
+        <div class="shopContent">
+            <h3>OUR CORE VALUES</h3>
+            <ul>
+                <li>We work with great people and we work as a team</li>
+                <li>We arePassionate and Commmited</li>
+                <li>We are Competitive and consistently Innovate</li>
+                <li>We are Accountable to Individual & Team results</li>
+                <li>We are connected to each other and Respect the nature</li>
+            </ul>
+
+            <h3>BLOSSOM PLANT SHOP IS DIFFERENT FROM THE COMPETITION BECAUSE:</h3>
+            <ul>
+                <li>Offering landscape designs that are not only attractive year round, but are low maintenance and
+                    unique to your property.</li>
+                <li>We are a relaible and professional landscaping company based in Warwickshire covering all
+                    surrounding areas.</li>
+                <li>We undertake all aspects of landscaping, from maintenance work to large scale projects.</li>
+                <li>All our waste is recycled, helping the environment and all our work is covered by public liability
+                    insurance for your piece of mind.</li>
+                <li>If you have any questions or would like a free, no obligation quote, please contact us through the
+                    website.</li>
+                <li>We have specialists in all the skilled jobs needed e.g, brickwork, stonework, water features.</li>
+                <li>From the first meeting to the final sign-off we make sure your garden is our top priority!</li>
+                <li>We create landscapes that are beautiful, functional, and reasonable to maintain, and match your
+                    tastes, budget, and aspirations.</li>
+                <li>We use only the best quality plants and materials.</li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+    <!-- Footer Section -->
+
+    <section class="footer">
+        <footer>
+            <div class="footerContent">
+                <h3>QUICK LINKS</h3>
+                <ul>
+                    <li><a href="./index.html">Gardening</a></li>
+                    <li><a href="./gardener.html">Hire Gardener</a></li>
+                    <li><a href="./fertilizer.html">Fertilizer</a></li>
+                    <li><a href="./accessories.html">Accessories</a></li>
+                    <li><a href="./corporate.html">Corporate</a></li>
+                    <li><a href="./identity.html">Our Identity</a></li>
+                    <li><a href="./reachout.html">Reach Out</a></li>
+                </ul>
+            </div>
+            <div class="footerContent">
+                <h3>POLICY</h3>
+                <ul>
+                    <li>Terms and Coditions</li>
+                    <li>About Us</li>
+                    <li>Return Policy</li>
+                    <li>Shipping & Returns</li>
+                    <li>Store Policy</li>
+                    <li>Payment Methods</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+            <div class="footerContent">
+                <h3>LOCATE US</h3>
+                <div class="locateContent">
+                    <p><img src="./assets/images/location.png">
+                    No.11/21, XYZ street,</p>
+                    <p style="padding-left: 30px;">ABC Nagar, AHJSJ</p>
+                    <p style="padding-left: 30px;">Chennai- 6000XX</p>
+                </div>
+                <div class="locateContent">
+                    <p><img src="./assets/images/ph.png">
+                    +91 9123456789</p>
+                </div>
+                <div class="locateContent">
+                    <p><img src="./assets/images/email-circle.png">
+                    blosoomplantstore@gmail.com</p>
+                </div>
+            </div>
+            <div class="footerContent">
+                <h3>WE ARE SOCIAL</h3>
+                <ul>
+                    <li><a href="https://wa.me/9012783466" target="_blank">Whatsapp</a></li>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/">Facebook</a></li>
+                    <li><a href="https://www.youtube.com/">YouTube</a></li>
+                    <li><a href="https://x.com/?lang=en-in">Twitter</a></li>
+                </ul>
+            </div>
+        </footer>
+
+    </section>
+
+
+    <script>
+        // Update cart count on all pages
+        function updateCartCount() {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            document.getElementById('cart-count').textContent = 
+                cart.reduce((sum, item) => sum + item.quantity, 0);
+        }
+        document.addEventListener('DOMContentLoaded', updateCartCount);
+        </script>
+
+
+    <!-- External JavaScript Files -->
+
+    <script src="./assets/js/toggle.js"></script>
+    <script src="./assets/js/login.js"></script>
+</body>
+
+</html>

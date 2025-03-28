@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Shopping Cart - Plant Nursery</title>
+    <link rel="stylesheet" href="./assets/css/cart.css">
+</head>
+
+<body>
+    <div class="cart-page">
+        <header class="cart-header">
+            <h1>Your Shopping Cart</h1>
+        </header>
+
+        <main class="cart-main">
+            <!-- Cart Items Container -->
+            <div id="cart-items" class="cart-items-container">
+                <!-- Dynamically populated by cart.js -->
+            </div>
+
+            <!-- Order Summary Section -->
+            <section class="cart-summary">
+                <h2>Order Summary</h2>
+                <div class="total-amount">
+                    <span>Total:</span>
+                    <span id="cart-total">₹0.00</span>
+                </div>
+                <button class="checkout-btn" onclick="proceedToCheckout()">
+                    Proceed to Checkout
+                </button>
+            </section>
+        </main>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div id="checkout-modal" class="cart-modal">
+        <div class="modal-content">
+            <h2 style="margin-top: 0;">Checkout Information</h2>
+            <form id="checkout-form">
+                <div>
+                    <label for="full-name">Full Name*</label>
+                    <input type="text" id="full-name" name="full-name" required>
+                </div>
+
+                <div>
+                    <label for="address">Address*</label>
+                    <textarea id="address" name="address" rows="3" required></textarea>
+                </div>
+
+                <div class="two-column">
+                    <div>
+                        <label for="city">City*</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+                    <div>
+                        <label for="state">State*</label>
+                        <input type="text" id="state" name="state" required>
+                    </div>
+                </div>
+
+                <div class="two-column">
+                    <div>
+                        <label for="country">Country*</label>
+                        <input type="text" id="country" name="country" required>
+                    </div>
+                    <div>
+                        <label for="pincode">Pincode*</label>
+                        <input type="text" id="pincode" name="pincode" required>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="phone">Phone Number*</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div>
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <button type="submit" class="place-order-btn">Place Order</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Success Modal  -->
+    <div id="success-modal" class="cart-modal">
+        <div class="modal-content">
+            <h2>Thank You!</h2>
+            <div class="modal-section">
+                <p>Your order has been placed successfully.</p>
+                <button class="modal-btn" onclick="closeSuccessModal()">Continue Shopping</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- External JavaScript Files -->
+     
+    <script src="./assets/js/cart.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1089 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Apply Poppins font to all elements */
+* {
+    font-family: 'poppins', sans-serif; 
+}
+
+/* Header container styling */
+.header_container {
+   display: flex; /* Use flexbox layout to display items in row */
+   justify-content: space-between; /* Align items properly */
+   align-items: center;
+   padding: 0px 20px; /* Add padding for right spacing */
+   flex-wrap: wrap;
+}
+
+/* Logo styling */
+.logo img {
+   width: 180px;
+   height: 180px;
+}
+.logo {
+   margin: 0; /* Remove extra margin */
+}
+
+/* Free shipping banner styling */
+.free_shipping {
+   color: #FFFFFF;
+   background-color: #2E7D32;
+   border-radius: 20px; /* Corner Styling for border */
+   text-align: center;
+   padding:5px 35px 15px 15px; /* Better spacing */
+}
+
+.free_shipping h3 {
+   margin:5px;
+   margin-bottom: 0px;
+}
+
+/* Login button container*/
+.login {
+   display: flex; /* Use flexbox for layout */
+   align-items: center;
+   border: 1px solid #2E7D32;
+   padding: 0px 15px;
+   border-radius: 20px;
+}
+
+.login:hover {
+   border:none;
+   cursor: pointer;
+}
+
+.bxs-user-circle{
+   font-size: 42px;
+}
+
+/* Text inside login button */
+.login h3 {
+   padding-left: 5px;  /*To Add space between icon and text */
+   font-weight: bold;
+}
+
+/* Remove underline from login link */
+.login a {
+   text-decoration: none;
+   color: black;
+}
+
+#loginForm {
+   position: relative;
+}
+
+#loginForm a{
+text-decoration: none;
+color:black;
+}
+
+#loginForm img {
+   position: absolute;
+   top: 93%;
+   left:25%;
+}
+
+/* Search bar styling */
+.search {
+   display: flex;
+   align-items: center;
+   border: 1px solid #2E7D32;
+   border-radius: 20px; /* Corner styling */
+   padding: 15px 15px; /* Adjusted padding */
+   width: 250px; /* Set a proper width */
+   background-color: #FFFFFF; /* Background color */
+}
+
+.bx-search {
+   font-size: larger;
+   color: grey;
+}
+
+.search-input {
+   border: none;
+   outline: none;
+   padding-left: 10px;
+   font-size: 16px;
+   width: 100%;
+}
+
+.search-input::placeholder {
+   color: grey;
+}
+
+#cart-icon img{
+   width:60px;
+   height:60px;
+}
+
+#cart-icon {
+   position: relative;
+   cursor: pointer; 
+   display: inline-block; 
+}
+
+#cart-count {
+   position: absolute;
+   top: -5px; 
+   right: 0px; 
+   background-color: red; 
+   color: white; 
+   border-radius: 50%; 
+   padding: 5px 13px; 
+   font-size: 16px; 
+   font-weight: bolder;
+}
+
+/* Navigation menu */
+.menu {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #2E7D32;
+   height: 110px;
+   padding: 0 20px;
+   position: relative;
+}
+
+/* Hide menu links by default on small screens */
+.menu-links {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   flex-grow: 1;
+}
+
+/* Navigation links */
+.menu-links a {
+   text-decoration: none;
+   color: #FFFFFF;
+   padding: 10px 20px;
+   font-size: 20px;
+   font-weight: bold;
+}
+
+/* Change style when hovered */
+.menu-links a:hover {
+  color: black;
+  background-color: rgb(192, 245, 192);
+  border-radius: 20px;
+}
+
+/* Toggle button (hamburger menu) */
+.menu-toggle {
+   display: none;
+   font-size: 24px;
+   cursor: pointer;
+   color: #FFFFFF;
+}
+
+ /* Modal container hidden by default */
+ .modal {
+   display:none; /* Initially hidden */
+   /* display:flex; */
+   justify-content: center;
+   align-items: center;
+   background-color: rgba(0,0,0,0.5); /* For semi-transparent background */
+   width:100%;  /*To take Full width and height*/
+   height:100%;
+   position:fixed; /* Fixed position on screen */
+   left:0;
+   top:0;
+   z-index: 1000; /* To Ensure modal appears on top */
+ }
+
+ /* Modal content box styling */
+ .modal_content {
+   background-color: white;
+   width:40%; /* Setting Modal width and height */
+   height:85%;
+   padding:20px; /* Padding inside */
+   border:5px solid #2E7D32;
+   border-radius: 30px; /* Rounded corners */
+   text-align: center;
+   margin:3% auto; /* Center horizontally */
+ }
+
+ /* Close button inside modal */
+ .close {
+   float:right; /* Positioning to the top Right */
+   font-size: 30px; 
+   cursor: pointer;
+   border:1px solid black;
+   padding:0 5px; /* Padding inside */
+ }
+
+#loginModal h2{
+color:green;
+}
+
+ .input_container {
+   display: flex;
+   align-items: center;
+   border: 1px solid #2E7D32;
+   padding: 10px;
+   border-radius: 10px;
+   margin-bottom: 28px;
+   position: relative;
+
+}
+
+.input_container i {
+   font-size: 20px;
+   color: #2E7D32;
+   margin-right: 8px;
+}
+
+.input_container input {
+   border: none;
+   outline: none;
+   width: 100%;
+}
+
+.error-message {
+   color: red;
+   font-size: 12px;
+   position: absolute;
+   bottom: -30px;
+   left: 10px;
+   display: none;
+}
+
+
+/* Button styling */
+.btn {
+   color:#FFFFFF;
+   background-color: #2E7D32;
+   border:none;
+   padding:15px 35px;
+   border-radius: 10px;
+   font-weight: bolder;
+   font-size: 15px;
+   cursor: pointer;
+}
+/* Form heading styling */
+form h3 {
+   border:1px solid #276b2a;
+   display: inline;
+   padding:10px 50px; /* Padding around text */
+   border-radius: 10px;
+   font-weight: bolder;
+}
+
+form p {
+   font-weight: bolder;
+}
+
+/* Carousel Container */
+.carousel {
+   width: 100%;
+   height: auto; 
+   overflow: hidden; /* Hide overflow */
+   position: relative; /* Positioning for inner elements */
+}
+
+/* Inner Carousel (for Images styling and layout) */
+.carousel-inner {
+   display: flex; /* Flexbox for sliding effect */
+   transition: transform 1s ease-in-out; /* Smooth transition */
+}
+
+/* Each Image in Carousel */
+.carousel-item {
+   width: 100%;
+   height: 500px;
+   flex-shrink: 0; /*To prevent shrinking */
+}
+
+.bannerCarousel {
+   margin: 20px 0;
+}
+
+/* Plants section heading */
+.plants h2 {
+   margin:80px 0;
+   text-align: center;
+   text-decoration: underline;
+   font-size: 38px;
+   font-weight: 900;
+}
+
+/* Plant container layout */
+.plantContainer { 
+   display:flex; /* Flexbox for aligning in row */
+   justify-content: space-around;
+   /* width:90%; */
+   margin:auto; /* Center container */
+   text-align: center;
+}
+
+/* Each plant image styling */
+.plant_item img {
+   width:100%;
+   height:100%;
+   /* padding: 0 20px; */
+   border-radius: 20px 20px 0 0; /* Rounded only for top corners(left and right) */
+   transition: transform 0.5s ease-in-out; /* Smooth hover effect */
+   transform: translateY(-3%) scale(1,1); /* Slight drag like lift effect and zoom */
+}
+
+/* Plant item title styling */
+.plant_item + h1 {
+   font-size: 32px;
+   font-weight: 900;
+   margin-top: 10px;
+}
+
+/* Plant Item container styling */
+.plant_item{
+   position: relative; /* For using absolute position (parent element) */
+   overflow: hidden; /* Prevents content from overflowing */
+   border-radius: 20px 20px 0 0; /* Rounded for top corners alone(left and right) */
+   width:290px;
+   height:400px;
+}
+
+/* Hover Effect - Scale and Translate Image */
+.plant_item:hover img{
+   transform:translateY(3%) scale(1.05, 1.2); /* Moves up and zoom effect */
+}
+
+/* Hover Overlay Effect */
+.plant_item::after {
+   content: ""; /* Empty content for overlay */
+   position: absolute; /* To cover entire element */
+   top: 0%;
+   left: 0%;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(72, 196, 78, 0.3); /* Light green overlay */
+   opacity: 0; /* Initially hidden */
+   transition: opacity 0.8s ease-in-out; /* To create a Smooth fade effect */
+}
+
+/* To Show Overlay on Hover */
+.plant_item:hover::after {
+   opacity: 1; /* visible fully */
+}
+
+.plants {
+   margin-bottom: 50px;
+}
+
+/* To arrange items in column */
+.plant_wrapper {
+   display: flex; 
+   flex-direction: column;
+   align-items: center;
+}
+.plant_wrapper a {
+text-decoration: none;
+color:black;
+}
+/* Pots Section background color*/
+.potsContainer{
+   background-color: rgb(117, 174, 145);
+}
+
+/* Pots Section Title */
+.potsContainer h2{
+   text-align: center;
+   text-decoration: underline;
+   padding-top: 50px;
+   font-size: 38px;
+   font-weight: bolder;
+}
+
+/* Layout for Different pot types */
+.potsTypes {
+   display:flex; /* To display in row */
+   justify-content: space-between; /* To space evenly(all elements) */
+   align-items: center;
+   text-align: center;
+   padding-bottom: 50px;
+}
+
+/* Pot Images */
+.potsItem img{
+   width:180px;
+   height:180px;
+   border-radius: 50%; /* Circle shape image*/
+   transition: transform 0.3s ease-in-out; /* Smooth animation effect*/
+   box-shadow: 0px 4px 2px rgba(3, 142, 70, 0.8); /* To create a Green shadow in bottom*/
+}
+
+/* Hover Effect for Pot Images */
+.potsItem:hover img {
+   transform: scale(1.2, 1.2) translate(10%, 10%); /* Enlarge and move down like effect */ 
+}
+
+/* Pot Item Title */
+.potsItem h1 {
+   font-weight: bolder;
+   font-size: 28px;
+}
+
+/* Padding for Individual Pot Items */
+.potsItem {
+padding:30px 35px;
+}
+
+
+/* Seed Item Grid Layout */
+.seedContainer {
+   display: grid; /* Arrange items in grid */
+   grid-template-columns: repeat(4, 1fr); /* Only 4 items per row each taking 1 fraction */
+   column-gap: 10px; /* Space between columns and rows*/
+   row-gap: 60px; 
+   margin-bottom: 40px;
+}
+
+.seedItem {
+   text-align: center;
+}
+
+/* Each image styling */
+.seedItem img {
+   width: 270px;
+   height: 280px;
+   border-radius: 35px 35px 0 0;  /* Rounded top corners for left and right side*/
+   display: block; /*no space below */
+}
+
+.seedItem:hover{
+    transform: scale(1.05); 
+
+}
+
+/* Styling for h3 (attached to image) */
+.seedItem h3 {
+   background-color: #2E7D32; 
+   color: #FFFFFF; 
+   padding: 10px;
+   border-radius: 0 0 35px 35px;  /* Rounded bottom corners left and right*/
+   margin: 0; /* Remove margin */
+   width: 92.5%; 
+   box-sizing: border-box; /* Ensures padding doesn't affect width (to not increase size)*/
+   display: block; /* h3 is attached below image */
+   font-size: 30px;
+}
+/* Move seeds to the next line */
+.seedItem h3 span {
+   display: block; 
+}
+
+/* Seeds Section Container */
+.seeds {
+   width:90%;
+   margin:auto;
+   display:block; 
+}
+
+/* Seeds Section heading styling */
+.seeds h2 {
+   text-align: center;
+   text-decoration: underline;
+   font-weight: bolder;
+   font-size: 36px;
+   padding:40px;
+}
+
+/* Blog section layout */
+.blogs {
+   margin: 70px 0; /* Above and below space*/
+}
+
+/* Blog section title */
+.blogs h2 {
+   padding:40px 0;
+   font-size: 40px;
+   text-align: center;
+}
+
+/* Blog item Layout */
+.blogItem {
+   display:flex; /* Flexbox layout */
+   align-items: center;
+   padding: 0 30px;
+   margin-bottom: 50px;
+}
+
+/* Blog image styling */
+.blogItem img {
+   width:600px;
+   height:auto;
+   margin-right: 20px;
+}
+
+/* Blog content paragraph styling */
+.blogContent p,.blogContent li{
+   font-size: 18px;
+}
+
+/* Footer Styling */
+footer{
+   display:flex; /* Flex layout to arrange in row */
+   justify-content: space-around;
+   padding:20px 50px;
+   background-color: #2E7D32;
+   color:#FFFFFF;
+}
+
+
+/* Footer List Items */
+footer li{
+   list-style: none;
+   font-size: 20px;
+}
+
+/* To remove default padding from footer ul */
+footer ul{
+   padding:0px;
+}
+
+.locateContent{
+   margin-bottom: 10px;
+}
+
+.footerContent h3{
+font-size: 22px;
+}
+
+.locateContent p{
+   margin:0; /* To remove default margin */
+   font-size: 20px;
+
+}
+.locateContent img{
+   width:25px;
+   height:25px;
+}
+
+.footerContent a{
+   text-decoration: none;
+   color: white;
+ }
+
+/* Media Queries */
+
+/* Small screens (Mobile devices: 320px - 767px) */
+@media (min-width: 320px) and (max-width: 767px) {
+   .header_container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap:10px;
+      margin-bottom: 10px;
+   }
+
+   .logo img {
+      width: 120px;
+      height: 120px;
+   }
+
+   .free_shipping {
+      padding: 10px;
+      width: 100%;
+      font-size: 12px;
+   }
+
+   .login, .search {
+      width: 87%;
+   }
+
+   .search h3 {
+      display: none;
+   }
+
+.menu {
+   flex-direction: column;
+   height: auto;
+   padding: 10px 0;
+}
+.menu-links {
+   display: none; /* Hide menu by default */
+   flex-direction: column;
+   width: 100%;
+   background-color: #2E7D32;
+   text-align: center;
+   padding: 10px 0;
+}
+.menu-links a {
+   padding: 10px;
+   font-size: 18px;
+}
+.menu-toggle {
+   display: block;
+}
+.menu.active .menu-links {
+   display: flex; /* Show menu when active */
+}
+
+.modal_content {
+   width: 75%;
+   height: auto;
+   /* padding: 5px; */
+}
+.modal_content h2{
+   margin:0px;
+   margin-bottom: 5px;
+   font-size: 20px;
+   }
+   #loginForm p{
+      margin:5px 0;
+   }
+   .input_container{
+      margin-bottom: 17px;
+   }
+
+   .close{
+      font-size: 16px;
+   }
+
+
+.input_container input {
+   width:65%;
+   /* padding-left: 35px; */
+}
+
+.input_container img {
+   left: 10%;
+   top: 20%;
+   width: 20px;
+   height: 20px;
+}
+
+.btn {
+   padding: 12px 30px;
+   font-size: 14px;
+}
+
+form h3 {
+   padding: 0px;
+   display:block;
+}
+#loginForm img {
+   top: 92%;
+   left: -1%;
+}
+
+.carousel-item{
+   height:auto;
+}
+
+.plantContainer {
+   flex-direction: column; /* Stack items vertically */
+   align-items: center;
+}
+
+.plant_item {
+   width: 90%; /* Adjust width */
+   height: auto;
+}
+
+.plant_item img {
+   height: auto;
+}
+
+.plant_item + h1 {
+   font-size: 24px; /* Reduce font size */
+}
+
+.plants h2 {
+   font-size: 28px; /* Reduce heading size */
+   margin:20px 0;
+}
+.plants{
+   margin-bottom: 0;
+}
+
+.potsTypes {
+   flex-direction: column; /* Stack items vertically */
+   gap: 20px; /* Add spacing */
+}
+
+.potsItem img {
+   width: 140px; /* Reduce image size */
+   height: 140px;
+}
+
+.potsItem h1 {
+   font-size: 22px; /* Reduce font size */
+}
+
+.potsContainer h2 {
+   font-size: 28px; /* Reduce heading size */
+   padding-top: 24px;
+   margin-top: 0;
+}
+.potsItem {
+   padding: 0px;
+}
+
+.seedContainer {
+   grid-template-columns: repeat(1, 1fr); /* Single column layout */
+   row-gap: 30px;
+}
+
+.seedItem img {
+   width: 90%; /* Adjust image width */
+   height: auto;
+}
+
+.seedItem h3 {
+   font-size: 22px; /* Reduce font size */
+   width: 90%;
+}
+
+.seeds h2 {
+   font-size: 28px;
+   padding:0;
+}
+
+.blogItem {
+   flex-direction: column; /* Stack image and text */
+   text-align: center;
+   padding: 0 20px;
+}
+
+.blogItem img {
+   width: 90%; /* Adjust image width */
+   margin: 0 auto 15px auto; /* Center image and add spacing */
+}
+
+.blogContent p {
+   font-size: 18px; /* Reduce font size */
+}
+.blogContent li{
+   float: left;
+}
+
+.blogs{
+   margin-top: 40px;
+}
+.blogs h2 {
+   font-size: 28px; /* Adjust heading size */
+   padding:0;
+}
+
+footer {
+   flex-direction: column; 
+   padding: 20px;
+}
+
+.locateContent p {
+  font-size: 14px;
+}
+.footerContent {
+   margin-bottom: 20px; 
+}
+
+.footerContent h3 {
+   font-size: 18px; 
+}
+
+.footerContent li {
+   font-size: 16px; 
+}
+}
+
+/* Medium screens (Tablets: 768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+   .header_container {
+      flex-wrap: wrap;
+      justify-content: space-around;
+   }
+
+   .logo img {
+      width: 150px;
+      height: 150px;
+   }
+
+   .free_shipping {
+      font-size: 14px;
+      padding: 10px 20px;
+   }
+
+   .login, .search {
+      margin-bottom: 20px;
+   }
+
+   .menu {
+      flex-wrap: wrap;
+      justify-content:space-evenly;
+      height: auto;
+      padding: 15px 0;
+  }
+   .menu-links a {
+      padding: 10px 18px;
+      font-size: 15px;
+  }  
+
+.modal_content {
+   width: 60%;
+   height: auto;
+}
+
+.input_container input {
+   width: 80%;
+}
+
+.input_container img {
+   left: 6%;
+   top: 20%;
+   width: 22px;
+   height: 22px;
+}
+
+.btn {
+   padding: 14px 32px;
+   font-size: 15px;
+}
+
+form h3 {
+   padding: 10px 40px;
+}
+#loginForm img {
+   left: 22%;
+}
+
+.plantContainer {
+   flex-wrap: wrap; /* Allow wrapping */
+   justify-content: center; /* Center items */
+   gap: 20px; /* Add spacing */
+}
+
+.plant_item + h1 {
+   font-size: 28px; /* Adjust font size */
+}
+
+.plants h2 {
+   font-size: 32px;
+      margin:20px 0;
+}
+
+.potsTypes {
+   flex-wrap: wrap; /* Allow wrapping */
+   justify-content: center; /* Center items */
+}
+
+.potsItem img {
+   width: 160px; /* Adjust image size */
+   height: 160px;
+}
+
+.potsItem h1 {
+   font-size: 26px;
+}
+
+.potsContainer h2 {
+   font-size: 32px;
+   margin:0;
+}
+
+.seedContainer {
+   grid-template-columns: repeat(2, 1fr); /* Two items per row */
+}
+
+.seedItem h3 {
+   font-size: 24px;
+   width:81%;
+}
+.seeds {
+   margin-left: 60px;
+}
+.seeds h2 {
+   font-size: 32px;
+   padding:20px;
+}
+
+.blogItem {
+   flex-direction: column; /* Stack items */
+   padding: 0 30px;
+}
+
+.blogItem img {
+   width: 80%; /* Adjust image size */
+   margin-bottom: 15px;
+}
+
+.blogContent p {
+   font-size: 20px;
+margin:20px 60px;
+}
+.blogContent ul{
+   
+    margin-left: 70px;
+ 
+}
+
+.blogs h2 {
+   font-size: 32px;
+   padding:0;
+}
+
+footer {
+   flex-wrap: wrap; /* Allow items to wrap if needed */
+   justify-content: space-between;
+   padding: 20px 40px;
+}
+
+.footerContent {
+   width: 45%; /* Two columns layout */
+   margin-bottom: 20px;
+}
+
+.footerContent h3 {
+   font-size: 22px;
+}
+
+footer li,
+.locateContent p {
+   font-size: 17px;
+}
+
+}
+
+/* Large screens (Laptops: 1024px - 1300px) */
+@media (min-width: 1024px) and (max-width: 1300px) {
+   .header_container {
+      flex-wrap: nowrap;
+      gap:45px;
+   }
+
+   .logo img {
+      width: 160px;
+      height: 160px;
+   }
+
+   .free_shipping {
+      font-size: 16px;
+      padding: 10px 30px;
+      margin-bottom: 20px;
+   }
+
+   .login, .search {
+      width: auto;
+   }
+
+   .modal_content {
+      width: 50%;
+      height: 58%;   
+  }
+
+  .input_container input {
+      width: 70%;
+  }
+
+  .input_container img {
+      left: 12%;
+      top: 18%;
+      width: 24px;
+      height: 24px;
+  }
+
+  .btn {
+      padding: 15px 35px;
+      font-size: 16px;
+  }
+
+  form h3 {
+      padding: 12px 45px;
+  }
+
+.menu {
+   justify-content: space-between;
+   padding: 0 50px;
+}
+.menu-links a {
+   padding: 10px 20px;
+   font-size: 20px;
+}
+
+.plantContainer {
+   /* justify-content: space-evenly; */
+   flex-wrap: wrap; /* Allow wrapping */
+   justify-content: center; /* Center items */
+   gap: 30px; /* Add spacing */
+
+}
+
+.plant_item {
+   width: 280px;
+   height: 380px;
+}
+
+.plant_item + h1 {
+   font-size: 30px;
+}
+
+.plants h2{
+   margin:20px 0;
+}
+
+.potsTypes {
+   justify-content: space-evenly;
+   
+}
+
+.potsItem img {
+   width: 170px;
+   height: 170px;
+}
+.potsItem {
+   padding: 10px 15px;
+}
+.potsItem h1 {
+   font-size: 20px;
+}
+
+.seedContainer {
+   grid-template-columns: repeat(3, 1fr); /* Three items per row */
+}
+
+.seedItem img {
+   width: 270px;
+   height: 280px;
+}
+
+.seedItem h3 {
+   font-size: 28px;
+   width:91%;
+}
+
+.seeds h2 {
+   font-size: 36px;
+   padding:10px;
+}
+
+.blogItem {
+   padding: 0 40px;
+}
+
+.blogItem img {
+   width: 500px; /* Adjust image width */
+}
+
+.blogContent p {
+   font-size: 16px;
+}
+
+.blogs h2 {
+   font-size: 36px;
+   padding:0;
+}
+
+footer {
+   padding: 30px 60px;
+   gap:25px;
+}
+
+.footerContent h3 {
+   font-size: 24px;
+}
+
+footer li,
+.locateContent p {
+   font-size: 17px;
+}
+
+}

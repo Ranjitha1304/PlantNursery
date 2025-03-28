@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Nursery</title>
+    <link rel="stylesheet" href="./assets/css/corporate.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+
+    <header>
+        <section class="header_container">
+            <div class="logo">
+                <img src="./assets/images/logo.png" alt="Plant Nursery Logo">
+            </div>
+            <div class="free_shipping">
+                <h3>FREE SHIPPING ON ALL ORDERS ABOVE Rs.499/-</h3>
+                <h3>HIRE-A-GARDENER FROM Rs.549/-</h3>
+            </div>
+            <div class="login">
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAddJREFUWEfdmAEyRDEMhrMnwUlwEpwEJ7FOgpPgJPhMa16zbfp3X403MrOD0eZ9Tf6kebuzjdluYzz2b4BOzezazM7NjN/5vKVo8/PFzJ7TZygJoxG6M7PbgScA9/i1nn2SqUAXZvaQIiE5dosAu1EipgCRGmDWmhStHhAgAM20+yiFEdCsyNQO04RqAaGZp5lhUTXVAgIGKMWyNk6S6Ef2nfkH1IDUVLUqZ6Qiqbz9EqoG9CqW92VQxmrKOVQRJQ+kRocuDFBkatqLg3kgtcwJM+GOTO3qRcV5IPVUYS9JlOrhimh7IFU/SspUX4WOPNCHUudpzQxR42oaUOtuUiusWu3HamjpDDBS+J7mI7UxZh9hhFRRD2S2uzQUtVqqPkLLv5keR6xoIT5lOKM6ekbZ4yiPrX59HnGV6ZJO/eOndnVEaWMj1dUCqYHhL4pawTByuR7cO70wpv8D04KSLlcc0GV9tSA+HKjRybwtf9UDjg5o0ly8iFzUk6qN9dgRFlG33ruyXpgcWqI+SFU+RG/IV9rAaGMMJ4UeEOAKlKjvbw0WE6LfqACxJ6oUBWbqi+KyWtDFlTji5pv8V16lW52YLxswqulPvmxQ0rNqjaqhVQ8Z2bw5oE9sbHIlqeUz0gAAAABJRU5ErkJggg==" />
+                <h3>
+                    <a href="#"> Login/Register</a>
+                </h3>
+            </div>
+            <div class="search">
+                <i class='bx bx-search'></i>
+                <input type="text" id="searchInput" placeholder="Search" class="search-input">
+                <i class='bx bx-x clear-search' id="clearSearch" style="display: none;"></i>
+            </div>
+<!-- Cart Icon -->
+<div id="cart-icon" onclick="window.location.href='cart.html'">
+    <img src="./assets/images/cart.png" alt="Cart">
+    <span id="cart-count">0</span>
+</div>
+        </section>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="menu">
+        <div class="menu-toggle" onclick="toggleMenu()">☰ MENU</div>
+        <div class="menu-links">
+            <a href="./index.html">Gardening</a>
+            <a href="./gardener.html">Hire Gardener</a>
+            <a href="./fertilizer.html">Fertilizer</a>
+            <a href="./accessories.html">Accessories</a>
+            <a href="./corporate.html">Corporate</a>
+            <a href="./identity.html">Our Identity</a>
+            <a href="./reachout.html">Reach Out</a>
+        </div>
+    </nav>
+
+    <!-- Login / Registration Modal -->
+
+    <section class="modal" id="loginModal">
+        <div class="modal_content">
+            <span class="close">&times;</span>
+            <h2>Login / Register</h2>
+            <form id="loginForm">
+                <div class="input_container">
+                    <i class='bx bxs-user'></i>
+                    <input type="text" id="name" placeholder="Name" required>
+                    <small class="error-message"></small>
+                </div>
+                <div class="input_container">
+                    <i class='bx bxs-phone'></i>
+                    <input type="tel" id="mobile" placeholder="Mobile" required>
+                    <small class="error-message"></small>
+                </div>
+                <div class="input_container">
+                    <i class='bx bxs-envelope'></i>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <small class="error-message"></small>
+                </div>
+                <div class="input_container">
+                    <i class='bx bxs-lock-alt'></i>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <small class="error-message"></small>
+                </div>
+                <button type="submit" class="btn">Login/Register</button>
+                <p>OR</p>
+                <a href="https://accounts.google.com/signin/v2/usernamerecovery?ddm=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><h3><img src="./assets/images/google.png" style="height: 30px; width:30px;">Sign Up with Google</h3></a>
+            </form>
+        </div>
+    </section>
+
+    <!-- Banner Section -->
+
+    <section class="banner">
+        <img src="./assets/images/corpbanner1.jpg" alt="banner">
+        <img src="./assets/images/corpbanner2.jpg" alt="banner">
+        <img src="./assets/images/corpbanner3.jpg" alt="banner">
+
+    </section>
+
+<!-- Benefits -->
+
+    <section class="benefits">
+        <h1>BENEFITS</h1>
+        <div class="benefitContainer">
+            <div class="benefitItem">
+                <img src="./assets/images/benefit1.png">
+                <h3>All India Delivery</h3>
+                <p>Courier or Dedicated vehicle or Self pickup</p>
+            </div>
+            <div class="benefitItem">
+                <img src="./assets/images/benefit2.png">
+                <h3>Lowest Prices</h3>
+                <p>Starting at ₹199 | Choose from 6000+ Products</p>
+            </div>
+            <div class="benefitItem">
+                <img src="./assets/images/Star Icon.png">
+                <h3>Custom Branding</h3>
+                <p>Branding on Bags, Pots, Care Cards</p>
+            </div>
+            <div class="benefitItem">
+                <img src="./assets/images/benifit4.png">
+                <h3>Meaningful Gifts</h3>
+                <p>Plants & seeds create meaningful connections.</p>
+            </div>
+        </div>
+    </section>
+
+<!-- Product Section -->
+
+<div class="product-list" id="productList"></div>
+    
+<div id="buyNowModal" class="modalOverlay">
+    <div class="modal-content" id="buyNowContent">
+        </div>
+    </div>
+
+
+<div id="cartModal" class="modalOverlay">
+    <div class="modal-content" id="cartContent"></div>
+</div>
+<div id="checkoutModal" class="modalOverlay">
+    <div class="modal-content">
+        <h2>Payment Options</h2>
+        <p><input type="radio" name="payment" checked> UPI</p>
+        <p><input type="radio" name="payment"> Wallet</p>
+        <p><input type="radio" name="payment"> Debit/Credit Card</p>
+        <p><input type="radio" name="payment"> Net Banking</p>
+        <p><input type="radio" name="payment"> Cash on Delivery</p>
+        <p><strong>Total Amount to Pay:</strong> ₹<span id="checkoutTotal">0</span></p>
+        <button onclick="placeOrder()">Place Order</button>
+        <button onclick="closeModal('checkoutModal')">Cancel</button>
+    </div>
+</div>
+
+<div id="orderSuccessModal" class="modalOverlay">
+    <div class="modal-content success">
+        <h2>Thank You!</h2>
+        <p>Your order has been placed successfully.</p>
+        <button onclick="closeAllModals()">Close</button>
+    </div>
+</div>
+
+    <!-- Footer Section -->
+
+    <section class="footer">
+        <footer>
+            <div class="footerContent">
+                <h3>QUICK LINKS</h3>
+                <ul>
+                    <li><a href="./index.html">Gardening</a></li>
+                    <li><a href="./gardener.html">Hire Gardener</a></li>
+                    <li><a href="./fertilizer.html">Fertilizer</a></li>
+                    <li><a href="./accessories.html">Accessories</a></li>
+                    <li><a href="./corporate.html">Corporate</a></li>
+                    <li><a href="./identity.html">Our Identity</a></li>
+                    <li><a href="./reachout.html">Reach Out</a></li>
+                </ul>
+            </div>
+            <div class="footerContent">
+                <h3>POLICY</h3>
+                <ul>
+                    <li>Terms and Coditions</li>
+                    <li>About Us</li>
+                    <li>Return Policy</li>
+                    <li>Shipping & Returns</li>
+                    <li>Store Policy</li>
+                    <li>Payment Methods</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+            <div class="footerContent">
+                <h3>LOCATE US</h3>
+                <div class="locateContent">
+                    <p><img src="./assets/images/location.png">
+                    No.11/21, XYZ street,</p>
+                    <p style="padding-left: 30px;">ABC Nagar, AHJSJ</p>
+                    <p style="padding-left: 30px;">Chennai- 6000XX</p>
+                </div>
+                <div class="locateContent">
+                    <p><img src="./assets/images/ph.png">
+                    +91 9123456789</p>
+                </div>
+                <div class="locateContent">
+                    <p><img src="./assets/images/email-circle.png">
+                    blosoomplantstore@gmail.com</p>
+                </div>
+            </div>
+            <div class="footerContent">
+                <h3>WE ARE SOCIAL</h3>
+                <ul>
+                    <li><a href="https://wa.me/9012783466" target="_blank">Whatsapp</a></li>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/">Facebook</a></li>
+                    <li><a href="https://www.youtube.com/">YouTube</a></li>
+                    <li><a href="https://x.com/?lang=en-in">Twitter</a></li>
+                </ul>
+            </div>
+        </footer>
+
+    </section>
+
+    <script>
+        // Initialize cart count
+        function updateCartCount() {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const count = cart.reduce((sum, item) => sum + (item.quantity || 0), 0);
+            document.getElementById('cart-count').textContent = count;
+        }
+        
+        // Set up event listeners when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            updateCartCount();
+            
+            // Login link event listener
+            document.getElementById('loginLink')?.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.getElementById('loginModal').style.display = 'flex';
+            });
+        });
+    </script>
+
+    <!-- External JavaScript Files -->
+     
+    <script src="./assets/js/toggle.js"></script>
+    <script src="./assets/js/login.js"></script>
+    <script src="./assets/js/corporate.js"></script>
+
+</body>
+
+</html>
